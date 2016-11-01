@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>operation precedence</title>
+</head>
+<body>
+<script>
+var a=1+2+5*6-(8*5);
+/*first expression group will excute 8*5= 40 next multiplication will perfrom 5*6=30 then addition will perform 1+2=3
+3+30-40 =-7 is the answer
+javascript will perfrom operaations based on the precedence nad expression group has the highest precedence */
+document.write(a + "<br>"+ typeof a + "<br>"+"<br>");
+var abc=2+3+"leela";
+document.write(abc+"<br>"+ typeof abc+"<br>"+"<br>");//left to right
+var cd="leela"+3+4+(5*6);
+document.write(cd+"<br>"+ typeof abc+"<br>"+"<br>");//left to right
+
+//addition operator only can perform with the string remaining all results a NaN(not a number)
+var b="leela"-89;
+document.write(b+"<br>"+ typeof b+"<br>"+"<br>");
+var c=90/"leela";
+document.write(c+"<br>"+ typeof c+"<br>"+"<br>");
+ var d=1+2+3-9+(4*5)*"lisa";
+//4*5=20 then 20* string returns NaN then entire epression returns a NaN
+document.write(d+"<br>"+ typeof d+"<br>"+"<br>");
+
+var obj=['leela','lisa']+(4*5)+6;//frist precedence []then multiplication then addition
+document.write(obj+"<br>"+ typeof obj+"<br>"+"<br>");
+var ob="lisa"+(20/2)+(10*3);
+//first epression multpliction next expression division next addition will perform 30 then 2 then lisa230
+document.write(ob+"<br>"+ typeof ob+"<br>"+"<br>");
+
+</script>
+</body>
+</html>

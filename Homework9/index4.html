@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loops</title>
+	<style>
+
+	div{
+		text-align:center;
+		font-size:20px;
+		font-family:verdana;
+		font-weight:bold;
+		text-decoration:underline;
+	}
+	</style>
+</head>
+<body>
+<div>For loop</div>
+<p>winter Fruits</p>
+<script>
+//using for loop to access the array elements//
+var leela=["apple","cantaloupe","banana","kiwi","peaches"];
+leela.push("mandrin");
+var i;
+for(i=0;i<leela.length;i++)
+{
+document.write(leela[i]+"<br>");
+}
+document.write("<br>");
+//using for loop to access the object elements 
+var lee={
+	name:"lisa",
+	age:22,
+	color:"peach",
+	flower:"orchids",
+	lang:"spanish"
+}
+for(item in lee)
+{
+document.write(item+" : "+lee[item]+"<br>");
+}
+</script>
+</body>
+</html>

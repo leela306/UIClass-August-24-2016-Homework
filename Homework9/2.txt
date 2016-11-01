@@ -1,0 +1,49 @@
+1.differences between == and ===
+
+== compares the two varibles whether they are equal or not .== checks the values of the variables,if they are equal then it return "true" if not then it will return "false".
+
+== equal value
+
+=== compares the two varibles whether they are equal or not .=== checks the values  and type(datatype) of the variables,if they are equal then it return "true" if not then it will return "false".
+ ===equal value and equal type
+
+exmples:
+1.
+9=="9" true //returns true because both values are equal
+9==="9" false //returns false because values are equal but they have different data types .one is number and other is string ,so they are not equal.
+
+2.7==7 true //values are equal
+  7===7 true //values and datatypes (number)both are equal
+ 
+
+  3.null==undefiend true//both has no value 
+    null=== undefined flase //both has equal value but datatypes are different.null is object type and undefiend is undefiend datatype.
+
+   
+
+differences between != and !==
+!= compares the two varibles whether they are equal or not .!= checks the values of the variables,if they are not equal then it return "true" if equal then it will return "false".
+
+!= not equal value
+
+!== compares the two varibles whether they are equal or not.!== checks the values  or type(datatype) of the variables,if they are not equal then it return "true" if equal then it will return "false".
+!== not equal value or not equal type 
+exmples:
+1.
+9!="9"  false//returns flase because values are equal.
+9!=="9" false //returns false because values are equal.
+
+2.7!= 6 true //values are not equal
+ "hi"!==7 true //values and datatypes (number)both are not equal
+
+ 3."9"!=="hi" true //values are not equal
+
+  3.null!=undefiend false//both has no value 
+    null!== undefined true //both has equal value but datatypes are different.null is object type and undefiend is undefiend datatype.
+
+ Refrences:
+ 1.http://stackoverflow.com/questions/523643/difference-between-and-in-javascript
+ 2.https://www.codecademy.com/en/forum_questions/558ea4f5e39efed371000508
+ 3.http://www.java67.com/2013/07/difference-between-equality-strict-vs-operator-in-JavaScript-Interview-Question.html
+ 4.https://www.quora.com/What-is-the-difference-between-undefined-and-null-in-JavaScript
+ 5.https://www.quora.com/What-is-the-difference-between-and-operator-in-javascript

@@ -1,0 +1,52 @@
+operation precedence:
+
+Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.In javascript expression group () has the highest priority
+
+() --->expression group
+. -->inde field
+[]--->array index
+
+if two operators have same precedence than it will take the precedence from ;eft to right
+
+examples:
+                only addition opearator can concatinate the string.
+
+1.
+"leela"+2+3 // left to right
+
+answer-------->leela5
+
+2.
+ 2+3+"leela" //left to right
+
+ answer -------->5leela
+
+ 3.'456'+7+8 //left to right
+
+ answer---->45678
+
+ if you apply the same with the multiplication/subtraction/division operator then it will give NaN(not a number)
+
+ 4.5+6* "leela"
+ answer -----> naN
+
+ 5.1+2+3-9+(4*5)*"lisa";
+
+//4*5=20 then 20* string returns NaN then entire epression returns a NaN
+
+6.obj=['leela','lisa']+(4*5)+6;
+//frist precedence []then multiplication then addition
+
+7.ob="lisa"+(20/2)+(10*3);
+
+//first epression multpliction next expression division next addition will perform 30 then 10 then lisa1030
+
+References:
+1.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+2.http://www.scriptingmaster.com/javascript/operator-precedence.asp
+3.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+4.http://www.w3schools.com/js/js_arithmetic.asp
+5.http://stackoverflow.com/questions/21158960/what-is-the-correct-javascript-operator-precedence-table
+
+
+
