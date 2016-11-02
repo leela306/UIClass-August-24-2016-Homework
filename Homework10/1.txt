@@ -1,0 +1,32 @@
+ 1.logical and , logical or
+ answer:
+Logical and(&&)
+
+Exp1 && Exp 2 than if exp1 is false than only exp1 is retuned.Expression 1 is returned if exp1 has a falsy value in the logical and operation
+
+1.first is false than it will return first value
+
+2.if both are true than second value will be return..
+
+Console.log (1 && 2)
+
+Return 2 value because both are true so second value is given. All the numbers are truthy value.
+
+Logical or(||)
+
+Exp1 || Exp 2 than if exp1 is true than only exp1 is retuned.Expression 1 is returned if exp1 has a true value in the logical and operation
+
+1.first is true than it will return first value
+
+2.if both are false than second value will be return..
+
+Console.log (1 || 2)
+
+Return 2 value because both are true so second value is given. All the numbers are truthy value.
+
+References:
+1.http://www.w3schools.com/js/js_comparisons.asp
+2.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+3.http://www.quirksmode.org/js/boolean.html
+4.http://stackoverflow.com/questions/5417969/why-dont-logical-operators-and-always-return-a-boolean-result
+5.http://stackoverflow.com/questions/2100758/javascript-or-variable-assignment-explanation

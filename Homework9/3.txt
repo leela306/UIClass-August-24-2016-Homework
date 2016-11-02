@@ -15,11 +15,9 @@ intentionally we are creating a value blank.null is a special object because typ
 
 Examples:
 
-var leela = null;
+var leela = null; //shows null
 
-alert(TestVar); //shows null
-
-alert(typeof TestVar); //shows object
+typeof leela //shows object
 
 null==undefiend true//both has no value so their values are equal
  null=== undefined flase //both has equal value but datatypes are different.null is object type and undefiend is undefiend datatype.

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>logical && and logical or</title>
+</head>
+<body>
+<script>
+//LOGICAL AND//
+console.log("leela"&& "akhi");//both strings are truthy values ,if both are true in && it will return second exprssion
+console.log(0 &&" ");// both are false becuase 0 and empty string are flasy values,it will return first expression.
+console.log(0 &&"cat");//0 is false n string is true//if frst exprssn is flase n && returns frst expression 
+console.log(NaN && false);//NaN and false both are false so it will give frst epressn 
+console.log((5=='5')&& "leela");//it will return secnd expressn because frst exp is true 
+console.log((7==7)&&(7==='7'));//it will return false because frst is true n second is false.
+console.log((3==4)&& 1);//it will return false becuase frst exp is false
+
+var apple=30;
+if(apple>10 && apple<50)
+{
+	document.write("you can buy me"+"<br>");
+}
+else
+{
+	document.write("you can not buy me");
+}
+
+//LOGICAL OR//
+console.log("jamie"|| "dornan");//both strings are truthy values ,if both are true in && it will return first exprssion
+console.log((4=='4')|| "leela");//it will return true because frst exp is true 
+console.log((9==9)||('9'===9));//it will return true because frst is true n second is false.
+console.log(6 ||(3==4));//it will return true becuase frst exp is true
+
+console.log(0 ||" ");// both are false becuase 0 and empty string are flasy values,it will return second expression.
+console.log(0 || "lee");//0 is false n string is true//if frst exprssn is flase n && returns second expression 
+console.log(NaN && false);//NaN and false both are false so it will give second epressn 
+
+var peach=30;
+if(peach<10 || peach>50)
+{
+	document.write("you can buy me");
+}
+else
+{
+	document.write("you can not buy me");
+}
+
+</script>
+
+
+</body>
+</html>

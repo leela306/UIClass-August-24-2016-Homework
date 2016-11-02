@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string Methods</title>
+</head>
+<body>
+<script>
+var leela="I love apple";
+var akhi="that is my fav fruit";
+document.write(akhi.replace("my","lovly")+"<br>");
+document.write(akhi.replace(/fruit/g,"flowermine")+"<br>");
+
+jack=leela.concat(" ",akhi);
+dakota=leela.length;
+jan=akhi.toUpperCase();
+ja=akhi.toLowerCase();
+
+
+document.write(jack+"<br>"); 
+document.write(dakota+"<br>");
+document.write(jan+"<br>");
+document.write(ja+"<br>");
+
+var lee="cantaloupe";
+patin=lee.concat("is in pale orange color");
+document.write(patin+"<br>");
+
+var abc = "pomogrant";
+document.write(abc.charAt(4)+"<br>");
+document.write(abc.charCodeAt(6)+"<br>");
+var arr = abc.split("");
+document.write(arr+"<br>");
+
+var de="bradpitt is from springfiled missouri";
+document.write(de.search("is")+"<br>");
+document.write(de.slice(16,29)+"<br>");
+document.write(de.slice(-15,-5)+"<br>");
+document.write(de.slice(16)+"<br>");
+document.write(de.slice(-16)+"<br>");
+document.write(de.substring(16,29)+"<br>");
+document.write(de.substr(16,29)+"<br>");
+
+var ef="catherine heigl is my favone";
+document.write(ef.indexOf("heigl")+"<br>");
+document.write(ef.lastIndexOf("my")+"<br>");
+
+
+
+
+
+</script>
+</body>
+</html>
