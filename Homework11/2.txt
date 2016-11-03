@@ -1,0 +1,59 @@
+ 2.object and object methods (.hasOwnProperty(item))?
+ answer:
+ objects are also like variables but object can contains many values than variables.
+ we can creat empty object too
+ var obj={};
+
+ we can objects can have so many propterties ,they can be define by using key value pairs
+ {key:value}//key and value are separate by :colon
+ properties can be separated by comma ,
+  key name should be a string in javascript while value can be any datatype in the javascript.
+
+ var obj={
+ name:"leela",
+ age:22,
+ color:"peach",
+ hero:"jamie"
+ }
+ //accessing the properties in the object.
+ obj.name //it will give leela
+
+ object methods:
+ methods are functions stored in the object properties.
+
+ var obj={
+ name:"leela",
+ age:22,
+ color:"peach",
+ hero:"jamie",
+ getName:function() //this is one of the object method
+ {
+  return this.name+' '+this.age;
+ }
+
+ }
+
+ function student(name,age,no)
+ {
+ this.sname=name;
+ this.sage=age;
+ this.sno=no;
+ this.change=function(word) //also a method of the object
+ {
+ return this.sname=word;
+ }
+ }
+
+ var s1=new student("leela",22,"11008911");
+ var s2=new student ("akhi",24,"11008934");
+
+ references:
+ 1.http://www.w3schools.com/js/js_object_methods.asp
+ 2.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+ 3.http://eloquentjavascript.net/06_object.html
+ 4.http://eloquentjavascript.net/1st_edition/chapter8.html
+ 5.http://hangar.runway7.net/javascript/guide
+ 
+
+
+ 

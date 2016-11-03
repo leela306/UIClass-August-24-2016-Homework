@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>obj properties</title>
+</head>
+<body>
+<script>
+
+var obj={
+ name:"leela",
+ age:22,
+ color:"peach",
+ hero:"jamie",
+ getName:function() //this is one of the object method
+ {
+  return this.name+' '+this.age;
+ }
+
+ }
+
+ console.log(obj.name);//returns leela
+ console.log(obj.age);//22
+ console.log(obj.color);//peach
+ console.log(obj.hero);//jamie
+ console.log(obj.getName()); //leela 22
+ //adding property:
+ obj.phn="660-238-1503"; 
+ obj['fav']="pub";
+
+ //adding new properties to the objetc --objname.newkeyname="value"; or objname['newkeyname']="value".
+
+ //2.delete a property:
+ //delete existing property in the objetc -- delete objname.existingkeyname="value"; or objname['existingkeyname']="value".
+
+ delete obj.hero;
+ //delete obj['hero']="jamie";
+
+ //3.edit property value:
+ //updating existing property in the objetc --  objname.existingkeyname="value"; or objname['existingkeyname']="value".
+
+  obj.color="green";
+  obj['age']=12;
+
+ /* 4.check if a property exists?
+ by using hasOwnProperty we can check whether the property existance //return boolen true or false
+ Objectname. hasOwnProperty(‘property key’)*/
+console.log(obj.hasOwnProperty('color')); //returns true
+console.log(obj.hasOwnProperty('fruit')); //returns false because obj does not have the fruit property.
+
+</script>
+
+</body>
+</html>

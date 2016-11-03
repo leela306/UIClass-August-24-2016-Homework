@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>objects</title>
+</head>
+<body>
+<script>
+var obj={
+ name:"leela",
+ age:22,
+ color:"peach",
+ hero:"jamie",
+ getName:function() //this is one of the object method
+ {
+  return this.name+' '+this.age;//obj.getName() returns name and age
+ }
+ }
+
+ function student(name,age,no)
+ {
+ this.sname=name;
+ this.sage=age;
+ this.sno=no;
+ this.change=function(word) //also a method of the object
+ {
+ this.sname=word;
+ }
+ }
+ var s1=new student ("leela",22,"11008911");
+ var s2= new student ("akhi",24,"11008934");
+ s1.change("lisa");//s1.sname returns lisa instead of leela
+
+/*
+function person(first,last,age){
+	this.firstName=first;
+	this.lastName=last;
+	this.age=age;
+}
+person.prototype.school="ucm";
+var suk=new person("sukhana","suku",21);
+var lee=new person("leela","lisa",22);
+var gowth=new person("gowthami","ghh",22);
+*/
+
+</script>
+
+</body>
+</html>

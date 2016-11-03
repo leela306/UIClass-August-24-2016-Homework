@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>creating objects</title>
+</head>
+<body>
+<script>
+//creating an object by using literals:
+var obj={
+ name:"leela",
+ age:22,
+ color:"peach",
+ hero:"jamie",
+ getName:function()
+ {
+  return this.name+' '+this.age;
+ }
+
+ }
+
+//creating an object by using new key word 
+function leela(){
+}
+var a=new leela(); 
+console.log(typeof a);//object
+
+//creating an object by using constructor.
+
+function person(first,last,age){
+	this.firstName=first;
+	this.lastName=last;                                   
+	this.age=age;
+}
+var suk=new person("sukhana","suku",21);
+var lee=new person("leela","lisa",22);
+var gowth=new person("gowthami","ghh",22);
+
+
+</script>
+
+</body>
+</html>

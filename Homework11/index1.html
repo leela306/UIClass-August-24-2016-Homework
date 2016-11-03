@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>diff b/w forEach and map</title>
+</head>
+<body>
+<script>
+arr3=["US","Uk",4,100,"united nations"];
+var aa4=arr3.forEach(function(item,index,arr){
+	document.write("gimm item :"+item+"index is:"+index+"array is :"+arr);
+	console.log("gimm item :"+item+"index is:"+index+"array is :"+arr);
+});
+//when you enter aa4 in the console it will return undefined
+
+document.write("map function strats"+"<br>");
+document.write("<br>");
+
+var arr2=["one","two","three","four"];
+var arr=arr2.map(function(item,index,arr){
+	return "I just want indexv"+index;
+
+});
+//when you enter arr in the console it will return the new form of the array from the existing one.
+
+var abc=[36,25,4,9,100,81,49,64];
+var cd=abc.forEach(function(value,ind,arr){
+	console.log("index is:"+ind+"square"+Math.sqrt(value));
+	return value;
+});
+
+var ed=abc.map(function(value,ind,arr){
+	console.log("index is:"+ind+"square"+Math.sqrt(value));
+	return value;
+});
+
+
+</script>
+</body>
+</html>

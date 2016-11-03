@@ -1,0 +1,25 @@
+5) what is prototype in object
+answer:
+all objects inherit methods and properties from Object.prototype.the prototype is also an object
+
+function person(first,last,age){
+	this.firstName=first;
+	this.lastName=last;                //this is Object.prototype here 
+	this.age=age;
+}
+
+person.prototype.school="ucm";
+person.prototype.state="Mo";
+person.prototype.zip="64093";
+
+var suk=new person("sukhana","suku",21);
+var lee=new person("leela","lisa",22);    //these inherit properties from object.prototype.
+var gowth=new person("gowthami","ghh",22);
+
+
+references:
+1.http://www.w3schools.com/js/js_object_prototypes.asp
+2.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
+3.http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/
+4.http://yehudakatz.com/2011/08/12/understanding-prototypes-in-javascript/
+5.https://javascriptweblog.wordpress.com/2010/06/07/understanding-javascript-prototypes/

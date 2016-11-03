@@ -1,0 +1,44 @@
+3) diff ways of creating an object
+answer:
+object can be created by three ways 
+1.by using literals
+2.by using new key word 
+3.by using the constructor 
+
+1.creating an object by using literals:
+var obj={
+ name:"leela",
+ age:22,
+ color:"peach",
+ hero:"jamie",
+ getName:function() //this is one of the object method
+ {
+  return this.name+' '+this.age;
+ }
+
+ }
+
+2.creating an object by using new key word 
+Function leela(){
+}
+Var a=new leela(); 
+console.log(typeOf a);//object
+
+3.creating an object by using constructor.
+
+function person(first,last,age){
+	this.firstName=first;
+	this.lastName=last;                                   
+	this.age=age;
+}
+var suk=new person("sukhana","suku",21);
+var lee=new person("leela","lisa",22);
+var gowth=new person("gowthami","ghh",22);
+
+references:
+1.http://www.phpied.com/3-ways-to-define-a-javascript-class/
+2.https://coderwall.com/p/p5cf5w/different-ways-of-creating-an-object-in-javascript
+3.https://www.quora.com/Why-are-there-so-many-ways-to-create-objects-in-Javascript
+4.http://stackoverflow.com/questions/16109108/javascript-creating-objects-multiple-approaches-any-differences
+5.https://javascriptweblog.wordpress.com/2010/03/16/five-ways-to-create-obejcts-part-2-inheritance/
+

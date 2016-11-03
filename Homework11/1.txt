@@ -1,0 +1,35 @@
+1) explain about arr.forEach and arr.map . compare the differences?
+
+arr=["red","color","black","peach"];
+
+here item is the value of the array //red,color,black,peach
+index -->index value of each item //index[0]--- red
+index[1]--color
+index[2]--black
+index[3]--peach
+
+arr--->the complete arr //arr=["red","color","black","peach"];
+
+arr.forEach(fucntion(item,index,arr){
+
+});
+
+in forEAch the function excutes for each and every item in the array.
+
+arr.map(function(item,index,arr)
+{
+	
+})
+
+arr.map creates the ne form of the array from the existing array.
+
+both has the (item,index,arr) but arr.map return the new array from the existing array while in forEach the function will excutes for each and every item in the array.
+
+References:
+1.http://stackoverflow.com/questions/354909/is-there-a-difference-between-foreach-and-map
+2.https://ryanpcmcquen.org/javascript/2015/10/25/map-vs-foreach-vs-for.html
+3.http://www.w3schools.com/jsref/jsref_forEach.asp
+4.https://tiffanybbrown.com/2012/10/15/array-prototype-map-versus-array-prototype-foreach/
+5.http://stackoverflow.com/questions/3034392/what-use-does-the-javascript-foreach-method-have-that-map-cant-do
+
+

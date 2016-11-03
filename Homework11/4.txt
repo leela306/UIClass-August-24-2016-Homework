@@ -1,0 +1,57 @@
+4.understand about properties in object. look into about adding property, delete a property, edit property value, check if a property exists?
+
+answer:
+
+var obj={
+ name:"leela",
+ age:22,
+ color:"peach",
+ hero:"jamie",
+ getName:function() //this is one of the object method
+ {
+  return this.name+' '+this.age;
+ }
+
+ }
+
+ obj.name//returns leela
+ obj.age//22
+ obj.color//peach
+ obj.hero//jamie
+ obj.getName() //leela 22
+
+ 1.adding property:
+ obj.phn="660-238-1503"; 
+ obj['fav']="pub";
+
+ //adding new properties to the objetc --objname.newkeyname="value"; or objname['newkeyname']="value".
+
+ 2.delete a property:
+ //delete existing property in the objetc -- delete objname.existingkeyname="value"; or objname['existingkeyname']="value".
+
+ delete obj.hero="jamie" or delete obj['hero']="jamie";
+
+ 3.edit property value:
+ //updating existing property in the objetc --  objname.existingkeyname="value"; or objname['existingkeyname']="value".
+
+  obj.color="green";
+  or
+  obj.['age']=22;
+
+  4.check if a property exists?
+  by using hasOwnProperty we can check whether the property existance //return boolen true or false
+  Objectname. hasOwnProperty(‘property key’)
+obj.hasOwnProperty(‘color’); //returns true
+obj.hasOwnProperty(‘fruit’); //returns false because obj does not have the fruit property.
+
+references:
+1.http://www.w3schools.com/js/js_properties.asp
+2.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
+3.http://www.2ality.com/2012/10/javascript-properties.html
+4.https://www.nczonline.net/blog/2010/07/27/determining-if-an-object-property-exists/
+5.http://stackoverflow.com/questions/208016/how-to-list-the-properties-of-a-javascript-object
+
+
+
+
+
