@@ -1,5 +1,6 @@
-5) what is prototype in object
+prototype?
 answer:
+is a single object, which would be the same across all the object which has been created out of the function.
 all objects inherit methods and properties from Object.prototype.the prototype is also an object
 
 function person(first,last,age){
@@ -9,7 +10,7 @@ function person(first,last,age){
 }
 
 person.prototype.school="ucm";
-person.prototype.state="Mo";  
+person.prototype.state="Mo";     //school, state and zip properties will exisits in all the objects suk,lee,gowth becuase they have declared globally.
 person.prototype.zip="64093";
 
 var suk=new person("sukhana","suku",21);

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this keyword</title>
+</head>
+<body>
+<script>
+var person={
+ firstName:"leela",
+ lastName:"lisa",
+ age:22,
+ color:"peach",
+ hero:"jamie",
+ getName:function()
+ {
+ 	console.log(this);
+  return this.firstName+' '+this.age;//here this keyword refers to object person.person.getName();
+ },
+ fullName:function()
+ {
+ 	console.log(this);
+  return this.firstName+' '+this.lastName;//here this keyword refers to object person.person.fullName();
+ }
+};
+
+function leela(){
+ 	console.log(this);//when we trying to call leela() it will refers to window object.
+ }
+ console.log(this);//this is also refers window
+
+</script>
+
+</body>
+</html>

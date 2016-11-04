@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>instanceof</title>
+</head>
+<body>
+<script>
+function student(){
+	}
+	var s=new student(); //object created 
+	console.log(s instanceof student); //true
+	console.log(s instanceof person); //false
+	console.log(lee instanceof student);//false
+
+	function person(first,last,age){
+	this.firstName=first;             //this is the constructor
+	this.lastName=last;                                   
+	this.age=age;
+}
+var suk=new person("sukhana","suku",21);
+var lee=new person("leela","lisa",22);           // these are the objects are that constructor
+var gowth=new person("gowthami","ghh",22);
+console.log(suk instanceof person); //true
+
+var arr=["one","two","three"];
+console.log(arr instanceof Array); //true
+console.log(arr instanceof Object); //true
+console.log(arr instanceof Number); //false
+</script>
+
+</body>
+</html>

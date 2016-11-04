@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>prototype</title>
+</head>
+<body>
+<script>
+//prototype
+
+function person(first,last,age){
+	this.firstName=first;
+	this.lastName=last;
+	this.age=age;
+}
+person.prototype.school="ucm";
+person.prototype.state="Mo";
+person.prototype.zip="64093";
+
+var suk=new person("sukhana","suku",21);
+var lee=new person("leela","lisa",22);
+var gowth=new person("gowthami","ghh",22);
+
+</script>
+
+</body>
+</html>
+

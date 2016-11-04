@@ -1,0 +1,24 @@
+1) constructor? and new key word? why do we use it?
+
+Answer:
+by using constructor we can create the object.It is one of the way to create an object.If we have the constructor then we can create as many instances as we can.
+
+suppose if we have  car as the constructor then we can create all the cars from that just by using the key word new.
+
+keyword new is used to create the instances of the constructor.if we mentioned new then it is object.
+
+function person(first,last,age){
+	this.firstName=first;             //this is the constructor
+	this.lastName=last;                                   
+	this.age=age;
+}
+var suk=new person("sukhana","suku",21);
+var lee=new person("leela","lisa",22);           // these are the objects are that constructor
+var gowth=new person("gowthami","ghh",22);
+
+references:
+1.http://www.w3schools.com/js/js_object_definition.asp
+2.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor
+3.https://css-tricks.com/understanding-javascript-constructors/
+4.https://blog.pivotal.io/labs/labs/javascript-constructors-prototypes-and-the-new-keyword
+5.http://javascript.info/tutorial/constructor

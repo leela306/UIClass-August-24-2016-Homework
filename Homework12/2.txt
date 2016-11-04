@@ -1,0 +1,36 @@
+2) instanceof
+answer:
+it will check whether it is true instance of the object or not.it will return the boolen values true or false.
+
+function student(){
+	}
+	var s=new student(); //object created 
+	s instanceof student //true
+	s instanceof person //false
+	lee instance of student//false
+
+
+function person(first,last,age){
+	this.firstName=first;             //this is the constructor
+	this.lastName=last;                                   
+	this.age=age;
+}
+var suk=new person("sukhana","suku",21);
+var lee=new person("leela","lisa",22);           // these are the objects are that constructor
+var gowth=new person("gowthami","ghh",22);
+suk instance of person //true
+
+var arr=["one","two","three"];
+arr instanceof Array //true
+arr instanceof object //true
+arr instaceof number //false
+
+references:
+1.http://javascript.info/tutorial/instanceof
+2.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
+3.http://www.w3schools.com/jsref/jsref_operators.asp
+4.http://stackoverflow.com/questions/2449254/what-is-the-instanceof-operator-in-javascript
+5.http://stackoverflow.com/questions/203739/why-does-instanceof-return-false-for-some-literals
+
+
+ 
