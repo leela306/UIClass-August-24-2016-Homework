@@ -1,0 +1,64 @@
+1) Practice all the selectors
+	document.getElementsByTagName
+	document.getElementById
+	document.getElementsByClassName
+	document.querySelectorAll
+
+answer:
+
+document.getElementsByTagName:
+
+document means the entire page .document.getElementsByTagName will give the tag names.
+document.getElementsByTagName('div') will give the all the div tag elements in the document.
+document.getElementsByTagName('Div') give the same result becuase it is case insensitive.
+
+examples:
+
+console.log(document.getElementsByTagName('DIV'));//it will give all the divs
+console.log(document.getElementsByTagName('div'));
+console.log(document.getElementsByTagName('span'));//it will give span tags
+console.log(document.getElementsByTagName('DIV')[0]);//give only frst div
+console.log(document.getElementsByTagName('DIV')[3]); //it will give only thrid div
+console.log(document.getElementsByTagName('p'));//it will giv all the paragraphs
+console.log(document.getElementsByTagName('p')[2]);//only paragraph 2
+
+document.getElementById:
+
+Id is the unique one in the entire document,no two id can have the same value.it will give only Id ellemts.
+
+examples:
+
+console.log(document.getElementById('abc'));//give first div
+console.log(document.getElementById('hk'));//give second div
+console.log(document.getElementById('ef'));//give paragraph 1
+
+document.getElementsByClassName:
+
+it will give the elements who has that particluar class name.
+
+examples:
+
+console.log(document.getElementsByClassName('one'));//give all elements oftheir  class name
+console.log(document.getElementsByClassName('two'));//
+console.log(document.getElementsByClassName('onetwo'));
+
+document.querySelectorAll:
+
+it will give all the elements who have the Tags,classes,Id and combination of selectors.
+
+'div.classname'-- it will satisfy both div and classname.
+'p.#id'--- it will give both paragraph and Id name.
+
+examples:
+
+console.log(document.querySelectorAll('.one'));//can give class name elements 
+console.log(document.querySelectorAll('#abc'));//can give Id element
+console.log(document.querySelectorAll('p.one'));//it will match both paragraph and class name should be one.
+
+references:
+1.http://www.w3schools.com/jsref/met_document_queryselectorall.asp
+2.https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+3.https://css-tricks.com/snippets/javascript/loop-queryselectorall-matches/
+4.http://stackoverflow.com/questions/14809528/why-does-js-code-var-a-document-queryselectoradata-a-1-cause-error
+5.https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+

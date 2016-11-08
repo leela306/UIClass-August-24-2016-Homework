@@ -1,0 +1,46 @@
+2) event listener .addEventListener
+
+answer:
+onclick ,oncontextmenu,onfocus,onload ....there so many events available in javascript.events will invoke the function when the particular action is performed then only they will return the values.
+at a time we can use only event by using event lister.becuase we can return only function at a time.
+
+examples:
+------------
+<p onclick="func()">leela</p>
+Enter Name:<input type="text" placeholder="enter your name" onfocus="fun()">
+
+<h1 oncontextmenu="func1()">!!!!!!!Right click Me!!!!!</h1>
+
+<div>leel is my favv</div>
+<div>leel miami is ossum </div>
+<script>
+function func(){
+	console.log("hey leela u clicked me");//invoke when user click on that.
+	
+}
+function func1(){
+console.log("u right clicked me");//invoke when use right clik on that  
+}
+function fun(){
+	console.log("hey leela enter your name");//invoke when user enter the name in the input filed.
+
+}
+
+
+addEventListener:by using addevent lister we can add multiple events to the same element.can apply onclick and oncontextmenu events on the same element.
+
+document.getElementsByTagName('p')[0].addEventListener('click',function(){
+console.log("paragraph 0");
+});
+
+document.getElementsByTagName('p')[0].addEventListener('contextmenu',function(){
+console.log("paragraph 0");
+});
+//here I have apply both click and contextmenu events to the paragraph[0] by using add event listener.
+
+we can not apply same events to all the paragraphs but we can add multiple events to them.
+
+references:
+1.http://www.w3schools.com/jsref/met_document_addeventlistener.asp
+2.https://developer.mozilla.org/en-US/docs/Web/API/EventListener
+3.http://idratherbewriting.com/events-and-listeners-javascript/

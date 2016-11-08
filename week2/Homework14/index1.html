@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>element methods</title>
+</head>
+<body>
+<div id="abc">first div</div>
+<div id ="ef">second div</div>
+<div class="one">third div</div>
+<div>fourth div </div>
+<div class="two">5th div</div>
+<span>leela</span>
+<span class="onetwo">choudhary</span>
+<p id="hk">this is my paragraph 1</p>
+<p class="one">this is my paragraph 2</p>
+<p class="one">this is my paragraph 3</p>
+<script>
+//document.getElementsByTagName:
+
+console.log(document.getElementsByTagName('DIV'));//it will give all the divs
+console.log(document.getElementsByTagName('div'));
+console.log(document.getElementsByTagName('span'));//it will give span tags
+console.log(document.getElementsByTagName('DIV')[0]);//give only frst div
+console.log(document.getElementsByTagName('DIV')[3]); //it will give only thrid div
+console.log(document.getElementsByTagName('p'));//it will giv all the paragraphs
+console.log(document.getElementsByTagName('p')[2]);//only paragraph 2
+
+//document.getElementById:
+
+console.log(document.getElementById('abc'));//give first div
+console.log(document.getElementById('hk'));//give second div
+console.log(document.getElementById('ef'));//give paragraph 1
+
+//document.getElementsByClassName:
+console.log(document.getElementsByClassName('one'));//give all elements oftheir  class name
+console.log(document.getElementsByClassName('two'));//
+console.log(document.getElementsByClassName('onetwo'));
+
+//document.querySelectorAll:
+
+console.log(document.querySelectorAll('.one'));//can give class name elements 
+console.log(document.querySelectorAll('#abc'));//can give Id element
+console.log(document.querySelectorAll('p.one'));//it will match both paragraph and class name should be one.
+                                             
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

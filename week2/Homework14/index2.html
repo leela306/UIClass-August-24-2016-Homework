@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>element methods</title>
+<style>
+h1{
+	background:green;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<p onclick="func()">leela</p>
+<p>this paragraph 1</p>
+<p>this paragraph 2</p>
+<p>this paragraph 3</p>
+
+Enter Name:<input type="text" placeholder="enter your name" onfocus="fun()">
+
+<h1 oncontextmenu="func1()">!!!!!!!Right click Me!!!!!</h1>
+
+<div>leel is my favv</div>
+<div>leel miami is ossum </div>
+<script>
+function func(){
+	console.log("hey leela u clicked me");
+	
+}
+function func1(){
+console.log("u right clicked me");
+}
+function fun(){
+	console.log("hey leela enter your name");
+}
+document.getElementsByTagName('p')[0].addEventListener('click',function(){
+console.log("paragraph 0");
+});
+
+document.getElementsByTagName('p')[0].addEventListener('contextmenu',function(){
+console.log("paragraph 0");
+});
+
+document.getElementsByTagName('p')[2].addEventListener('click',function(){
+console.log("paragraph 2");
+});
+
+</script>
+
+</body>
+</html>
