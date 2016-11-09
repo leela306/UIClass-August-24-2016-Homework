@@ -1,0 +1,14 @@
+4.$(document).ready vs window.onload?
+
+$(document).ready: It is Jquery function ,ready is loaded after HTML document and DOM(document object model) has been loaded and before the images,media files and scripting files.It will run as soon as possible.It is better to use when we are delaing with large amount of data.
+
+window.onload?
+
+It is javascript function,onload function will load after all the website loaded including the images,media files and scripting files but before the stylesheets.it is recommended to use when we are dealing with small amount of files.
+
+
+
+
+references:
+http://www.codeproject.com/Tips/632672/JavaScripts-document-ready-vs-window-load
+https://discuss.codecademy.com/t/window-onload-vs-document-ready/19000/2

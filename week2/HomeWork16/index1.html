@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>event delegation</title>
+</head>
+<body>
+<div id='parent'>hey I am the parent
+<p id="child1">I am child number 1</p>
+<p id="child2">I am child number 2</p>
+<p id="child3">I am child number 3</p>
+<p id="child4">I am child number 4</p>
+<p id="child5">I am child number 5</p>
+</div>
+<script>
+document.getElementById('parent').addEventListener('click',function(leela){
+if(event.target.tagName==='P')	{
+		console.log(event.target.innerHTML);
+	}
+	})
+//here we just event lister to the parent and all the child elements are successfully calling
+
+
+</script>
+</body>
+</html>

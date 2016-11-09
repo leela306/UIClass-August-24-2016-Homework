@@ -1,0 +1,9 @@
+
+2.what is jQuery?
+
+JQuery, which is the library of the JavaScript. Without JavaScript JQuery cannot be implemented. 
+
+3.why do we use jquery ?
+
+
+JQuery has been optimized to perform many common scripting functions in fewer lines of codes. It is easier to create animations, image carousels, navigations, dropdown menus, handle events and developing AJAX applications by using the JQuery.

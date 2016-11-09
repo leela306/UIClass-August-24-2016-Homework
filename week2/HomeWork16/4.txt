@@ -1,0 +1,20 @@
+what is $?
+
+it is syntax in Jquery.
+$(selector).action
+
+$---Jquery
+slector can be any HTML selecotors like DIV,p,li,span,class and id
+action...that are gonna perform on the selectros.
+
+show()....selectors gonna show
+hide()...hide the elememts
+toggle()...just toggle the case if they are showing dn hide and vice versa.
+
+
+
+references:
+1.http://www.w3schools.com/jquery/jquery_syntax.asp
+2.http://www.w3schools.com/jquery/jquery_ref_selectors.asp
+3.http://jqfundamentals.com/chapter/jquery-basics
+4.http://api.jquery.com/is/
