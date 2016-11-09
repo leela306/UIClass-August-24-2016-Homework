@@ -1,0 +1,12 @@
+4) event.stopPropagation?
+
+answer:
+we use this to stop the propogation ,if it is used in the program then 
+if event bubbling then only child element is invoked
+if parent then only parent element is invoked.
+
+1.http://www.javascripter.net/faq/eventbubbling.htm
+2.http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
+3.https://javascript.info/tutorial/bubbling-and-capturing
+4.http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
+5.http://www.w3schools.com/jsref/event_bubbles.asp

@@ -1,0 +1,55 @@
+1) selector.addEventListener(eventType, handlerFunction, captureFlag)
+
+answer:
+selector can be any type in these 
+
+document.getElementsByTagName
+	document.getElementById
+	document.getElementsByClassName
+	document.querySelectorAll
+
+event type can be onclick,onload,oncontextmenu,onfocus,onblur,function 
+
+capture flag...>true,false,not provided anything.
+
+
+addEventListener:
+
+by using addevent lister we can add multiple events to the same element.can apply onclick and oncontextmenu events on the same element.
+
+document.getElementsByTagName('p')[0].addEventListener('click',function(){
+console.log("paragraph 0");
+});
+
+document.getElementsByTagName('p')[0].addEventListener('contextmenu',function(){
+console.log("paragraph 0");
+});
+//here I have apply both click and contextmenu events to the paragraph[0] by using add event listener.
+
+we can not apply same events to all the paragraphs but we can add multiple events to them.
+
+we can not have add eventlister for all the tags at a time,only one div at a time but you can add multiple events by using this.
+
+document.getElementsByTagName('div').length // it will gives the number of divs available in the document.
+
+by using for loop we can add the event listener  to all the divs but we are unable to identify which div has been clicked.
+
+
+
+//applying event listener to all the paragraph elements by using for loop
+
+for(var i=0;i<document.getElementsByTagName('p').length;i++){
+document.getElementsByTagName('p')[i].addEventListener('click',function(event){
+	console.log("paragraph");
+});//here we are not able to recognize which paragraph element has been invoked.
+};
+
+so we use event.target --->it will tells us event has clicked.
+event.target.innerHTML will gives you the content with in the divs.
+
+
+
+references:
+1.http://www.w3schools.com/jsref/met_document_addeventlistener.asp
+2.https://developer.mozilla.org/en-US/docs/Web/API/EventListener
+3.http://idratherbewriting.com/events-and-listeners-javascript/

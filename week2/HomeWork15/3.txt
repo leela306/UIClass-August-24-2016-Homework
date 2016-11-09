@@ -1,0 +1,11 @@
+2) what is event propagation?
+
+answer:
+if there is parent and child elements,if you click on the child elemnt then parent also invoked because child is inside the parent.there is no need to call the parent here ,if you invoked child then parent automatically invoked.
+
+references:
+1.http://www.javascripter.net/faq/eventbubbling.htm
+2.http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
+3.https://javascript.info/tutorial/bubbling-and-capturing
+4.http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
+5.http://www.w3schools.com/jsref/event_bubbles.asp
