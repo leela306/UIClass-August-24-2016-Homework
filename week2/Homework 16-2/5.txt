@@ -1,0 +1,10 @@
+5.content filters in jquery?
+
+console.log(jQuery('p:contains(baby)').css('color','red'));
+//it will give the all selectors who has the text matches with am 
+console.log(jQuery('p:empty').css('font-weight','bold'));
+//select the elements that have children
+console.log(jQuery('p:parent').css('color','navy'));
+//select the elements that have children
+console.log(jQuery(':has(div)').css('color','green'));
+//select the elements that have children
