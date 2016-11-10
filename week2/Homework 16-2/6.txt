@@ -1,0 +1,28 @@
+6.form filters in JQuery?
+console.log(jQuery('input:button'));
+//it will give all the buttons in form filters
+console.log(jQuery('input:button').length);
+//it will give  the length of the buttons in form filters
+console.log(jQuery('input:checked'));
+//it will give all the checked input in the form filters
+console.log(jQuery('input:checked').length);
+//it will give  the length of the checked inputs in form filters
+console.log(jQuery('input:disabled'));
+//it will give all the disabled input in the form filters
+console.log(jQuery('input:disabled').length);
+//it will give  the length of the disabled inputs in form filters
+console.log(jQuery('input:radio'));
+//it will give all the radio input in the form filters
+console.log(jQuery('input:radio').length);
+//it will give  the length of the disabled inputs in form filters
+console.log(jQuery('input:text'));
+//it will give all the disabled input in the form filters
+console.log(jQuery('input:text').length);
+//it will give  the length of the disabled inputs in form filters
+console.log(jQuery('option:selected'));
+//it will give all the selected option in the form filters
+console.log(jQuery('option:selected').length);
+//it will give  the length of the selected options in form filters
+
+refernce:
+http://api.jquery.com/category/selectors/form-selectors/

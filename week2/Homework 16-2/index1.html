@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic selectors</title>
+</head>
+<body>
+<div>hey this is leela</div>
+<div class="one">hey this is lisa</div>
+<div>hey this is akhi</div>
+<div>hey this is john</div>
+
+<ul>
+<li>Home</li>
+<li>News</li>
+<li>Movies</li>
+</ul>
+<p id="child1">I am baby1</p>
+<p id="child2">I am baby2</p>
+<h1>JQuery is the javascript of library</h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script >
+console.log(jQuery('ul,p'));
+console.log(jQuery('#child1').css('color','red'));
+console.log(jQuery('.one').css('background','navy'));
+console.log(jQuery('*'));
+console.log(jQuery('h1').css('color','blue'));
+
+
+</script>
+</body>
+</html>

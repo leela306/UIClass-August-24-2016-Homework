@@ -1,0 +1,32 @@
+2.attrubute based selectors in jQuery?
+
+[type=text]//it will select the all attributes with type =text.
+[type*=on]//it will select all the attributes who has "on" in their attribute name.
+[type$=on]//it will select all the attributes who have end with "on" in their attribute name.
+[type^=on]//it will select all the attributes who have start with "on" in their attribute name.
+[type|=on]//it will select all the attributes who have "on" and  hypen (-) followed by "on"
+[type~=on]//it will select all the attributes who have "on" and spaces  followed by "on"
+
+
+
+console.log(jQuery('[type=text]'));
+
+[type=text]//it will select the all attributes with type =text.
+
+console.log(jQuery('[class~=btn]'));
+/it will select all the attributes who have "btn" and spaces  followed by "btn"
+
+
+console.log(jQuery('[class|=btn]'));
+it will select all the attributes who have "btn" and  hypen (-) followed by on
+
+console.log(jQuery('[class=one]').css('color','red'));
+it will select the all attributes with class =one.
+
+
+
+console.log(jQuery('[type*=o]'));
+[type*=on]//it will select all the attributes who has "o" in their attribute name.
+
+console.log(jQuery('[type$=on]').css('background','#FF5733'));
+[type$=on]//it will select all the attributes who have end with "on" in their attribute name.

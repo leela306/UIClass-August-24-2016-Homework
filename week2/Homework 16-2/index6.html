@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form filters</title>
+</head>
+<body>
+
+<form>
+enter your lastname:<input type="text" placeholder="enter lastname"><br>
+<br>
+enter your firstname:<input type="text" placeholder="enter firstname"><br>
+<br>
+enter your age:<input type="number" placeholder="enter age"><br>
+<br>
+opt your Gender:<br>
+<input type="radio" name="Sex">Male<br>
+<input type="radio" name="Sex">Female<br>
+<br>
+check in your favourite fruit:<br>
+<input  type="checkbox" checked="checked">Orange<br>
+<input type="checkbox" checked="checked">Banana<br>
+
+selct your fav category:<br>
+<select>
+<option value="Holly">Holly</option>
+<option type="news" selected="selected">News</option>
+<option type="movies">Movies</option>
+</select>
+<br>
+<br>
+<input type="text" placeholder="enter address" disabled><br>
+<br>
+<input type="text" placeholder="enter street" disabled><br>
+<input class="btn-le" type="button" value="sumbit"><br>
+<br>
+<input class="btn-flowers" type="button" value="reset"><br>
+<br>
+<input class="lee btn" type="button" value="Next"><br>
+<br>
+</form>
+
+<div id="abc"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script >
+console.log(jQuery('input:button'));
+//it will give all the buttons in form filters
+console.log(jQuery('input:button').length);
+//it will give  the length of the buttons in form filters
+console.log(jQuery('input:checked'));
+//it will give all the checked input in the form filters
+console.log(jQuery('input:checked').length);
+//it will give  the length of the checked inputs in form filters
+console.log(jQuery('input:disabled'));
+//it will give all the disabled input in the form filters
+console.log(jQuery('input:disabled').length);
+//it will give  the length of the disabled inputs in form filters
+console.log(jQuery('input:radio'));
+//it will give all the radio input in the form filters
+console.log(jQuery('input:radio').length);
+//it will give  the length of the disabled inputs in form filters
+console.log(jQuery('input:text'));
+//it will give all the disabled input in the form filters
+console.log(jQuery('input:text').length);
+//it will give  the length of the disabled inputs in form filters
+console.log(jQuery('option:selected'));
+//it will give all the selected option in the form filters
+console.log(jQuery('option:selected').length);
+//it will give  the length of the selected options in form filters
+
+
+
+$(document).ready(function()
+{
+var leela=$('option:selected').text();
+$('#abc').text(leela);
+});
+
+</script>
+</body>
+</html>

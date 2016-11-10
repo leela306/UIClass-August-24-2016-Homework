@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>attribute selectors</title>
+</head>
+<body>
+<div>hey this is leela</div>
+<div class="one">hey this is lisa</div>
+<div>hey this is akhi</div>
+<div class="one">hey this is john</div>
+
+enter your name:<input type="text" placeholder="enter name"><br>
+enter your full name:<input type="text" placeholder="enter fullname"><br>
+enter your age:<input type="number" placeholder="enter age"><br>
+opt your Gender:<br>
+Male:<input type="radio" name="Sex"><br>
+Female:<input type="radio" name="Sex"><br>
+
+<input class="btn" type="button" value="submit"><br>
+<br>
+<input class="btn-le" type="button" value="Home"><br>
+<br>
+<input class="btn-flowers" type="button" value="Holly"><br>
+<br>
+
+<input class="lee btn" type="button" value="News"><br>
+<br>
+<input class="btn leela" type="button" value="Movies"><br>
+
+<p class="one">I am baby1</p>
+<p id="child2">I am baby2</p>
+<h1>JQuery is the javascript of library</h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script >
+console.log(jQuery('[type=text]'));
+console.log(jQuery('[class~=btn]'));
+console.log(jQuery('[class|=btn]'));
+console.log(jQuery('[class=one]').css('color','red'));
+console.log(jQuery('[type=text]').css('background','navy'));
+console.log(jQuery('[type*=o]'));
+console.log(jQuery('[type$=on]').css('background','#FF5733'));
+
+
+</script>
+</body>
+</html>

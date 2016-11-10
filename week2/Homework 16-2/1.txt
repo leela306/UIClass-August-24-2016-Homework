@@ -1,0 +1,17 @@
+1.Basic Selectors in jQuery?
+
+we have selectors like tag name('div','p','span','h1,h2,h3,h4,h5,h6'),id(#),class(.) ,all sectors(*) and multiple selectors.
+
+in Jquery:
+console.log(jQuery('ul,p')); //it will give the ul and paragraph tag elements .i have used multiple selectors here.
+console.log(jQuery('#child1').css('color','red'));//it will give the id selector
+console.log(jQuery('.one').css('background','navy'));//it will give the class selector
+console.log(jQuery('*'));//it will give all the slectors including html,head title,body
+console.log(jQuery('h1').css('color','blue'));//it will give the tagname selector
+
+
+ 
+
+bind() the event handlers will not work for newly created divs or elements.
+
+on() the event handlers  work for newly created divs or elements.

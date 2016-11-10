@@ -1,0 +1,24 @@
+3.basic filters in JQuery?
+
+console.log(jQuery('div:eq(4)').css('color','red'));
+// it will select the div whose index is equal to 4.
+console.log(jQuery('p:even').css('background','green'));
+//it will give the para tag elements whose index number is even
+
+console.log(jQuery('div:first').css('background','navy'));
+//it will give the first element of the div
+console.log(jQuery('p:last').css('background',' #9B59B6'));
+//it will give the last element of the paragraph
+console.log(jQuery('p:gt(2)').css('background','#00FF00'));
+//it will all the para tags whose inde greater than 2
+
+console.log(jQuery('h1:header').css('color','#ff9999'));
+//it will select the h1 tag
+
+console.log(jQuery(':not(div)'));
+//it will select all the elements except div
+
+
+
+references:
+1.http://api.jquery.com/category/selectors/basic-filter-selectors/

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>child filters</title>
+</head>
+<body>
+
+<div>hey this is leela 0</div>
+<div>hey this is leela 1</div>
+<div>hey this is leela 2</div>
+<div>hey this is leela 3</div>
+<div>hey this is leela 4</div>
+<div>hey this is leela 5</div>
+
+<span>this is first span 0</span>
+<span>this is first span 1</span>
+<span>this is first span 2</span>
+<span>this is first span 3</span>
+<span>this are first span 4</span>
+<span>these are first span 5</span>
+
+<div> hey this is</div>
+<p>I am baby0</p>
+<p>I am baby1</p>
+<p>I am baby2</p>
+<p>I am baby3</p>
+<p>I am baby4</p>
+<p>I am baby5</p>
+<p> I am baby6</p>
+
+<div>this is parent
+<p>para o</p>
+<p>para 1</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script >
+
+console.log(jQuery('p:contains(baby)').css('color','red'));
+//it will give the all selectors who has the text matches with am 
+console.log(jQuery('p:empty').css('font-weight','bold'));
+//select the elements that have children
+console.log(jQuery('p:parent').css('color','navy'));
+//select the elements that have children
+console.log(jQuery(':has(div)').css('color','green'));
+//select the elements that have children
+
+
+</script>
+</body>
+</html>

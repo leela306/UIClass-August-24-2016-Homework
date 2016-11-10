@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hierarical filters</title>
+</head>
+<body>
+
+<div>
+<span>first chidl of div </span>
+<p>Second child of div</p>
+<span>third child of div
+             <p>hey I am first child of span</p>
+             <p>hey I am the second child of  span</p>
+</span>
+<p> fourth child of div</p>
+<p> fifth child of div </p>
+
+</div>
+<div>fourth sibling of div</div>
+<p>first siblings of div </p>
+<p>second siblings of  div </p>
+<span>third sibling of div</span>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script >
+
+console.log(jQuery('div p').css('color','red'));
+//it will select the all decedent  (paragraph p)children of the div
+//there are five paragraph elements those are desedent children of the div
+
+console.log(jQuery('div p').length);
+//it will giv the length of the all p desedent elements
+
+console.log(jQuery('div>span').css('background','navy'));
+//we have two spans and three paragraphs that are children of the div.
+//> will give only immediate children so it will select two spans
+console.log(jQuery('div>span').length);
+//it will giv the length of span immediate elements
+
+console.log(jQuery('div +div').css('background','green'));
+//div has  two para,one span and one div  siblings
+// + will give only immediate siblings of the div so it will give only immediate para elements
+console.log(jQuery('div+ div').length);
+//it will giv the length of the immediate siblings
+
+console.log(jQuery('div ~p').css('background','#F39C12'));
+//div has  two para,one span and one div  siblings
+// ~ will give all the siblings of the div so here it will give only give two para,one span and one div
+console.log(jQuery('div ~p').length);
+//it will giv the length of the all p siblings
+
+console.log(jQuery('div:first-child').css('background','#FF9999'));
+//div has  two para,one span and one div  siblings
+// ~ will give all the siblings of the div so here it will give only give two para,one span and one div
+console.log(jQuery('div:first-child').length);
+//it will giv the length of the all p siblings
+
+console.log(jQuery('div>:first-of-type').css('background','#6C3483'));
+//div has  two para,one span and one div  siblings
+// ~ will give all the siblings of the div so here it will give only give two para,one span and one div
+console.log(jQuery('div>:first-of-type').length);
+//it will giv the length of the all p siblings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

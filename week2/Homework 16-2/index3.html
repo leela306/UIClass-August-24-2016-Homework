@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic filters</title>
+</head>
+<body>
+<div>hey this is leela 0</div>
+<div>hey this is leela 1</div>
+<div>hey this is leela 2</div>
+<div>hey this is leela 3</div>
+<div>hey this is leela 4</div>
+<div>hey this is leela 5</div>
+
+<p>I am baby0</p>
+<p>I am baby1</p>
+<p>I am baby2</p>
+<p>I am baby3</p>
+<p>I am baby4</p>
+<p>I am baby5</p>
+
+<h1>hey I am h1 tag</h1>
+<h2>hey I am h1 tag</h2>
+<h3>hey I am h1 tag</h3>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script >
+console.log(jQuery('div:eq(4)').css('color','red'));
+// it will select the div whose index is equal to 4.
+console.log(jQuery('p:even').css('background','green'));
+//it will give the para tag elements whose index number is even
+
+console.log(jQuery('div:first').css('background','navy'));
+//it will give the first element of the div
+console.log(jQuery('p:last').css('background',' #9B59B6'));
+//it will give the last element of the paragraph
+console.log(jQuery('p:gt(2)').css('background','#00FF00'));
+//it will all the para tags whose inde greater than 2
+
+console.log(jQuery('h1:header').css('color','#ff9999'));
+//it will select the h1 tag
+
+console.log(jQuery(':not(div)'));
+//it will select all the elements except div
+
+
+
+</script>
+</body>
+</html>

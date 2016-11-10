@@ -1,0 +1,23 @@
+4.child filters in jquery?
+
+console.log(jQuery(':first-child').css('color','red'));
+// it will select the first child in html document so it will give head is the first child ,title  is the first child of head and div is the first child of body
+
+console.log(jQuery(':first-of-type').css('font-weight','bold'));
+// it will select the first child in html document so it will give head is the first child ,title  is the first child of head,div is the first child of body, first span is first child of body and first p tag is first child of body
+
+console.log(jQuery(':last-of-type').css('background','navy'));
+//it will give the last element of the div is para
+
+console.log(jQuery(':nth-child(5)').css('background',' #9B59B6'));
+//it will give the 5th element of the paragraph of div and para elements
+
+console.log(jQuery(':nth-last-of-type(3)').css('background','#00FF00'));
+//it will all the para tag last elements 
+
+console.log(jQuery(':nth-of-type(2)').css('color','#ff9999'));
+//it will give second last type of elements 
+
+
+references:
+http://api.jquery.com/category/selectors/child-filter-selectors/
