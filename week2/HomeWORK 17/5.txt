@@ -1,0 +1,61 @@
+5.what is AJAX?
+AJAX is used at the client side.it is consuming the webservices.
+it will send the request to the server and waits for the response from it.
+AJAX is used to make a call to the server at the client side
+
+$.ajax --> how to use? 
+jQuery.ajax({
+	is used to make a call
+	url:need an url to work on webservices
+	method:which http method we are using exmaple get,post,put,delete
+	//sucess method only excutes when ajax got response from the server
+	success:function(data){
+
+	},
+	error:function(data){
+
+	}
+})
+put and delete methods needs ID to edit or delete the existing recprd.GET method is the default methos.
+
+Example:
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUT method</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+//PUT method is edit the existing record and it needs the ID too
+
+var data={
+	name:'leela choudhary',
+	age:20,
+	place:'New jersey',
+	movie:'theory',
+	from:'new delhi'
+}
+//we are calling AJAX means sending a request
+	jQuery.ajax({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/5824f15b66e7190100e967e9',
+		//method is PUT
+		method:'PUT',
+		//we are passing the data here
+		data:data,
+
+		//success method only excutes when we get the response from the server
+		success:function(data){
+           console.log(data);
+		},
+		error:function(xhr){
+            console.log(xhr); 
+		}
+
+	})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POST method</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+//post method is create a new record
+var data={
+	name:'leela',
+	age:20,
+	place:'New jersey',
+	movie:'theory'
+}
+//we are calling AJAX means sending a request
+	jQuery.ajax({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/',
+		//method is GET 
+		method:'POST',
+		//we are passing the data here
+		data:data,
+
+		//success method only excutes when we get the response from the server
+		success:function(data){
+           console.log(data);
+		},
+		error:function(xhr){
+            console.log(xhr); 
+		}
+
+	})
+</script>
+
+</body>
+</html>

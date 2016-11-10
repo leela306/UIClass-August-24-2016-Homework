@@ -1,0 +1,35 @@
+1.webservices used for exhnaging the data between client and server
+and they are used for the message formating like XML and JSON
+
+in UI we will use only RESTFUL webservices
+
+REST services supported over HTTP 
+
+HTTP methods 
+GET...to retrieve the information 
+PUT..updating the existing record
+POST...creating a new record
+DELETE...deleting the existing record.
+
+1.GET method
+BY default it will take get method
+
+//we are calling AJAX means sending a request
+	jQuery.ajax({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/',
+		//method is GET 
+		method:'GET',
+		//success method only excutes when we get the response from the server
+		success:function(data){
+           console.log(data);
+		},
+		error:function(xhr){
+            console.log(xhr); 
+		}
+
+	})
+
+ we need an URL to exmine this methods or to work on them
+ this is the URL
+ http://rest.learncode.academy/api/johnbob/friends/

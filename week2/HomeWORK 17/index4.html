@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DELETE method</title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+//DELETE method is used to delete the existing record and it needs the ID too
+
+//we are calling AJAX means sending a request
+	jQuery.ajax({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/58229fd25da0480100167048',
+		//method is DELETE
+		method:'DELETE',
+
+		//success method only excutes when we get the response from the server
+		success:function(data){
+           console.log(data);
+		},
+		error:function(xhr){
+            console.log(xhr); 
+		}
+
+	})
+</script>
+
+</body>
+</html>
