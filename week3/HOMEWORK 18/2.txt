@@ -1,0 +1,17 @@
+2.MVC, MVVM (Data binding)?
+
+MVC....model view controller ,it is two way databinding.
+model...holds the data of appliction
+view...which is visible to the users
+controller...which act as a link between model and view ,they are isolated from each other.if changes occured in the model they are updated in the model throught the controller and vice versa.
+
+model------controller------view.
+databinding from model to view and view to model.
+
+MVVM
+M--->model...holds the data of appliction
+V--->view...which is visible to the users
+VM---->view model...it will identify the changes in either model or view and synchroze the chnages in data between them.
+
+
+MVC is refinement to the MVVM model.

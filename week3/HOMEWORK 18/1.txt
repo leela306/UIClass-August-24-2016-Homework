@@ -1,0 +1,32 @@
+1.status codes of HTTP in RESTFUL webservices?
+
+2XX is used for the Success
+3xx is used redirection
+4xx is used for Client Error
+5XX is used for Server Error
+
+200 status code Ok means ...succeeded.
+201 created
+202 Accepted
+
+3xx is used redirection
+
+4xx is used for Client Error
+when client sends http request to the server and server can not serve to that request so it will send some error messages to the client as response
+
+400 is  client send a bad request to the server
+ 401 means client request is Unauthorized
+ 403 means client request is forbidden 
+ 404 means not found
+ server not able to find the information which is for client is requesting.
+
+ 5XX is used for Server Error
+ 500 internal server error
+ server is facing some internal problem so that can not respond to the client
+ 501 not implemented
+ the clinet request can not be implemented
+ 502 bad Gateway
+ when the server requests the other server then did not get any response from that server
+ 503 service unavalable
+ server is unable to server the response to the client.
+
