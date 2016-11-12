@@ -10,6 +10,7 @@ step-2:it will check the condition ,if the condition is true then the loop start
 step-3:after statement execution incrementation section will increment the values.
 
  while loop:
+
  while(condition){
  statement;
  increment;
@@ -21,6 +22,7 @@ step-3:after statement execution incrementation section will increment the value
  step 3:increment the value.
 
 do while loop:
+
  do{
 statement;
 increment;

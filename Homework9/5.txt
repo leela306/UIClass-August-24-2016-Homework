@@ -9,6 +9,7 @@ if statement is false then only else excutes
 
 switch:
 switch excutes the block of code based on the user input.it is very hectic to use if else statements.if your using switch then you can save the memory because if else consumes large amount of memory.switch will make the code so ease to use.
+
 swicth()	{
 	case:
 	break;

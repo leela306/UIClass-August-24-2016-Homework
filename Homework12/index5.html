@@ -16,10 +16,9 @@ var color="green";
 			return this.color;
 		}
 	}
-document.write(obj.getName());//here refers to the obj.
-document.write("<br>");
+console.log(obj.getName());//here refers to the obj.
 var newfunc=obj.getName;
-document.write(newfunc());//refer refers to the global object that is window.
+console.log(newfunc());//refer refers to the global object that is window.
 
 </script>
 

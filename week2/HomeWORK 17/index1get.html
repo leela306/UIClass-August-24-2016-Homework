@@ -6,9 +6,15 @@
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
+
+//GET method is used to retrive the infromation 
+//we are calling AJAX means sending a request
 	jQuery.ajax({
+		//this is URL we are using
 		url:'http://rest.learncode.academy/api/johnbob/friends/',
+		//method is GET 
 		method:'GET',
+		//success method only excutes when we get the response from the server
 		success:function(data){
            console.log(data);
 		},

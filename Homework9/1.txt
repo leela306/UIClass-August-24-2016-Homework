@@ -3,10 +3,10 @@ operation precedence:
 Operator precedence determines the order in which operators are evaluated. Operators with higher precedence are evaluated first.In javascript expression group () has the highest priority
 
 () --->expression group
-. -->inde field
+. -->index field
 []--->array index
 
-if two operators have same precedence than it will take the precedence from ;eft to right
+if two operators have same precedence than it will take the precedence from left to right
 
 examples:
                 only addition opearator can concatinate the string.
@@ -14,7 +14,7 @@ examples:
 1.
 "leela"+2+3 // left to right
 
-answer-------->leela5
+answer-------->leela23
 
 2.
  2+3+"leela" //left to right
@@ -39,7 +39,7 @@ answer-------->leela5
 
 7.ob="lisa"+(20/2)+(10*3);
 
-//first epression multpliction next expression division next addition will perform 30 then 10 then lisa1030
+//first divison next multiplication next addition will perform 30 then 10 then lisa1030
 
 References:
 1.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
