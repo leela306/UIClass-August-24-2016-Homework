@@ -1,6 +1,8 @@
-3.array methods (push, pop, unshift, shift, slice, splice, indexOf, lastIndexOf, forEach, map, contact, reverse, join, ...).
+﻿3.array methods (push, pop, unshift, shift, slice, splice, indexOf, lastIndexOf, forEach, map, contact, reverse, join, ...).
+
 answer:
 arr.length:it will tells the length of the array.
+
 Push:adding the new items at the end of the array and it will return the new array length.
 
 pop:remove the items at the end of the array.
@@ -12,6 +14,7 @@ Unshift: adding the items at the starting of the array.
 Shift:remove the items at the starting of the array
 
 concate:it will concat the two arrays with each other .
+
 slice():it will extract the portion of the tring.can give negitive values in the slice ,it will take from the last to first in reverse order.
 Slice(2,5)…………….>>Arr[2] ,Arr[3]  ,Arr[4] only.
 slice(1,3):will give from arr[1] to arr[2] characters.
@@ -32,12 +35,11 @@ foreach function:
 Arr=[“leela” ,”lisa”,”akhi”];
 in for each function is excuted for each item in the Array.
 Arr.forEach(function(item,index,arr)
-in for each function is executed for each item in the Array.
-It created new array out of returned values from with in the map..
 
 {
 Console.log(item);
 })
+
 map:
 Arr. map(function(item, index, arr)){
 
