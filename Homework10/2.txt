@@ -1,4 +1,5 @@
 2.string methods (contact, split, ...)
+
 answer:
 string concat:it will join the two strings with each other 
 string length:it will tells the length of the string.
@@ -14,6 +15,7 @@ replace:it will replace the code with use choice code.can replace the string by 
 
 (/movie/g,leela);//tring movie will globally replace with leela string
 search:it will search the string and returns the position of the string.
+
 slice():it will extract the portion of the tring.can give negitive values in the slice ,it will take from the last to first in reverse order.
 slice(6,16):will give from 6 to 15 characters.
 slice(-16,-6):return the string in reverse order.
@@ -23,6 +25,7 @@ slice(-16):return entire string starts from character 16 in reverse order.
 substring():slice and substring are same but substring can not accept the negitive values.
 substr():it will extract the portion of the string.
 substr(7,13):return the string which starts from 7 and will take upto 13 character.
+
 indexof():it will give the position of the string from left to right.
 lastIndexof():it will give the position of the string from right to left that is las to first.
 
