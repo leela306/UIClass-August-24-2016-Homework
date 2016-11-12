@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>$scope</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="leela">
+<div ng-controller="abc">
+Enter your name:<input text="type" ng-model="firstName"><br/>
+{{firstName}}
+</div>
+<div ng-controller="def">
+<input text="type" ng-model="fil">
+<p ng-repeat="appp in fruits|filter:fil"">{{appp.name}}<br>{{appp.color}}</p>
+</div>
+</div>
+<script>
+angular.module('leela',[]);
+angular.module('leela').controller('abc',function($scope)
+ {
+ $scope.firstName="choudhary";
+});
+ angular.module('leela').controller('def',function($scope)
+ {
+ $scope.fruits=[{name:'banana',color:'green'},
+                  {name:'apple',color:'red'},
+                   {name:'cantaloupe',color:'peach'},
+                    {name:'lemon',color:'yellow'},
+                     {name:'madrin',color:'ornage'},
+                   ]
+
+ }); 
+
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>$scope</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="leela">
+<div ng-controller="abc" style="border:5px solid green"; >
+Enter your name:<input text="type" ng-model="firstName"><br/>
+{{firstName}}<br/>
+<div ng-controller="def" style="border:5px solid navy"; >
+{{firstName}}<br/>
+Enter your age:<input text="number" ng-model="age"></br>
+{{age}}<br/>
+<div ng-controller="ghk" style="border:5px solid pink";>
+{{firstName}}<br/>
+{{age}}<br/>
+Enter your fav movie:<input text="number" ng-model="mov"></br>
+{{mov}}
+
+</div>
+</div>
+</div>
+
+</div>
+<script>
+angular.module('leela',[]);
+angular.module('leela').controller('abc',function($scope)
+ {
+$scope.firstName="choudhary";
+});
+ angular.module('leela').controller('def',function($scope)
+ {
+$scope.age="22";
+ }); 
+ angular.module('leela').controller('ghk',function($scope)
+ {
+$scope.mov="nerve";
+ }); 
+
+
+ </script>
+
+</body>
+</html>

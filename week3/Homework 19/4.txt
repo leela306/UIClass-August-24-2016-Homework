@@ -1,0 +1,4 @@
+4.$scope in angular js?
+
+$scope is used to refer the object to access a model in a controller.
+$rootscope is used to refer the object to acess the model defined out the controller

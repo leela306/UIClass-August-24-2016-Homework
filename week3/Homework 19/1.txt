@@ -1,0 +1,24 @@
+1.One time data binding & two way data binding?
+
+one time data binding:only model to view possible in it and it occurs once when the page loads.when u trying to do the changes again that will not occurs in it because the changes already occured in it.
+
+two way data binding:
+
+model...holds the data of appliction
+view...which is visible to the users
+model------controller------view.
+
+model to view:
+we can make changes from model to view means if you make the changes in the model then they will automatically updated in the view too.
+
+example:
+ng-bind is the example of the model to view
+
+view to model:
+view to model means if you make the changes in the view then they will automatically updated in the model too.
+
+example:
+ng-model is the example of the view to model.ng-model means it will make new model.
+
+
+databinding from model to view and view to model.

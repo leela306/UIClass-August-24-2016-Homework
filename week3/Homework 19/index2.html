@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ng init</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="leela">
+<div ng-init="lang=[{name:'leela',age:'20'},
+                   {name:'lee',age:'21'},
+                   {name:'le',age:'20'},
+                   {name:'leel',age:'10'}]">
+<p ng-repeat="vari in lang">
+Name:{{vari.name}}<br>
+Age:{{vari.age}}
+</p>
+</div>
+</div>
+<script>
+angular.module('leela',[]);
+</script>
+</body>
+</html>

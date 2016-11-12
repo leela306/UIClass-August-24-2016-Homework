@@ -1,0 +1,2 @@
+ 6.ng-click, .. events in angular js?
+ Adding an event(ng-click)in the angular JS.we can add the events in the angular js by using the ng-click directive.

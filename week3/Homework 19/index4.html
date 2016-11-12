@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>$scope</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="leela">
+<div ng-controller="abc">
+Enter your name:<input text="type" ng-model="firstName"><br/>
+{{firstName}}
+</div>
+Enter your changed name:<input text="type" ng-model="changeName"><br/>
+{{changeName}}
+</div>
+
+<script>
+angular.module('leela',[]);
+angular.module('leela').controller('abc',function($scope,$rootScope)
+ {
+ $scope.firstName="choudhary";
+ $rootScope.changeName="chou";
+});
+ </script>
+
+</body>
+</html>

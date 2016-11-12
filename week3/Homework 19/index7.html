@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ng-click</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="leela">
+<div ng-controller="abc">
+<div ng-click="add()">CLICL ME!!!!</div>
+
+</div>
+</div>
+
+<script>
+angular.module('leela',[]);
+angular.module('leela').controller('abc',function($scope)
+ {
+
+$scope.add=function()
+{
+	alert("hey leela you cliked me");
+}
+});
+ </script>
+
+</body>
+</html>

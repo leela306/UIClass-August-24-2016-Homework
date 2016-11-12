@@ -1,0 +1,10 @@
+ 3.{{}}  angular expressions?
+
+ this expressions are binding expressions.we can use this expressions instead of the ng-bind.
+ {{model name}}
+ <div ng-bind="model name">
+
+ ng-bind:
+
+model to view:
+we can make changes from model to view means if you make the changes in the model then they will automatically updated in the view too.

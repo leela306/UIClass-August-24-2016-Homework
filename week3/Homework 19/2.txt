@@ -1,0 +1,23 @@
+2.ng-init, ng-model, ng-app, ng-bind?
+
+ng-app:
+ng-app is the built directory in the angular JS .we need to register the ng-app application in Angular .without registration it will give you the error.so u can name the ng-app in the html head or body(div,p) but need to register in the javascript only.
+can define anywhere in the html but registarion must be done in the javascript.
+
+ng-model:
+
+it will make new model.
+
+view to model:
+view to model means if you make the changes in the view(input) then they will automatically updated in the model too.
+input is the part of the view.
+
+ng-bind:
+
+model to view:
+we can make changes from model to view means if you make the changes in the model then they will automatically updated in the view too.
+
+ng-init:
+
+we can intiate the varibles by using the ng-init.we can intiliases data types of the javascript by using this directive.can intiliaze the array,object,string,number and etc.
+
