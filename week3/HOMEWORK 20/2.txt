@@ -1,0 +1,106 @@
+2) isolated scope 
+	@ 
+	= 
+	&
+
+	Answer:
+@ :by using the @ in the isolated scope we can read the values from the attribute and we can also print them.
+
+exmaple:
+                    <!-- @ in the isolated scope-->
+<div style="border:6px solid purple">
+<leela3 attr1="HI"></leela3>
+<leela3 attr1="leela"></leela3>
+<leela3 attr1="how you"></leela3>
+<leela3 attr1="doing"></leela3>
+</div>
+angular.module('myApp').directive('leela3',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Here is your attr1:{{attr1}}.input model value is {{attr2}}</div>',
+			scope:{
+				attr1:"@",
+				}
+
+
+				=: we can use = scope in the isolated to read the enter values by the user and print that values.
+example:
+
+<!-- = in the isolated scope-->
+
+<div style="border:6px solid red">
+Enter your fave movie:<input ng-model="mod1"><br>
+Enter your fave movie:<input ng-model="mod2"><br>
+Enter your fave movie:<input ng-model="mod3"><br>
+Enter your fave movie:<input ng-model="mod4"><br>
+
+<leela3 attr1="HI" attr2="mod1"></leela3>
+<leela3 attr1="leela" attr2="mod2" ></leela3>
+<leela3 attr1="how you" attr2="mod3"></leela3>
+<leela3 attr1="doing" attr2="mod4"></leela3>
+</div>
+
+angular.module('myApp').directive('leela3',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Here is your attr1:{{attr1}}.input model value is {{attr2}}</div>',
+			scope:{
+				attr1:"@",
+				attr2:"="
+			}
+			}
+
+here the values which will gonna enter in the input fileds will print in them .if  we mentined @ instead if the equal then it will print the attr2 values like mod1,mod2,mod3,mod4 as it is.
+
+so @ will print the values which are equal to the attribute values.attr1="leela"than it will print the assigned value directly but = scope will print that enter values by the user.
+
+&:
+it will take the reference from the functions here.we are passing the reference of the function here.
+
+example:
+<div ng-controller="firstctrl"></div>
+
+                   <!-- & in the isolated scope-->
+
+<leela3  attr3="brunch()"></leela3>
+<leela3 attr3="party()" ></leela3>
+<leela3  attr3="dance()"></leela3>
+<leela3  attr3="hangout()"></leela3>
+</div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+angular.module('myApp',[]);
+angular.module('myApp').controller('firstctrl',['$scope','$rootScope',function($scope,$rootScope){
+	$scope.brunch=function(){
+		alert("we will brunch together");
+
+	}
+	$scope.party=function(){
+		alert("we will throw great party");
+		
+	}
+	$scope.dance=function(){
+		alert("we will plan rain dance");
+		
+	}
+	$scope.hangout=function(){
+		alert("love to hangout vth frdz");
+	}
+	}]);
+                    //& in the isolated scope
+angular.module('myApp').directive('leela3',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Here the button is <button ng-click="attr3()">Click ME</button></div>',
+			scope:{
+				attr3:"&"
+			}
+
+			}
+			
+	})
+
+

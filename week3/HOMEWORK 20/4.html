@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>& scope </title>
+</head>
+<body>
+<div ng-app="myApp">
+
+<div ng-controller="firstctrl"></div>
+
+                   <!-- & in the isolated scope-->
+
+<leela3  attr3="brunch()"></leela3>
+<leela3 attr3="party()" ></leela3>
+<leela3  attr3="dance()"></leela3>
+<leela3  attr3="hangout()"></leela3>
+</div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+angular.module('myApp',[]);
+angular.module('myApp').controller('firstctrl',['$scope','$rootScope',function($scope,$rootScope){
+	$scope.brunch=function(){
+		alert("we will brunch together");
+
+	}
+	$scope.party=function(){
+		alert("we will throw great party");
+		
+	}
+	$scope.dance=function(){
+		alert("we will plan rain dance");
+		
+	}
+	$scope.hangout=function(){
+		alert("love to hangout vth frdz");
+	}
+	}]);
+                    //& in the isolated scope
+angular.module('myApp').directive('leela3',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Here the button is <button ng-click="attr3()">Click ME</button></div>',
+			scope:{
+				attr3:"&"
+			}
+
+			}
+			
+	})
+
+</script>
+
+</body>
+</html>
+

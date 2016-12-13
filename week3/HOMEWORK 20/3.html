@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>controller</title>
+</head>
+<body>
+<div ng-app="myApp">
+
+<div ng-controller="firstctrl"></div>
+                    <!-- @ in the isolated scope-->
+<div style="border:6px solid purple">
+<leela3 attr1="HI"></leela3>
+<leela3 attr1="leela"></leela3>
+<leela3 attr1="how you"></leela3>
+<leela3 attr1="doing"></leela3>
+</div>
+<br>
+<br>
+                   <!-- = in the isolated scope-->
+
+<div style="border:6px solid red">
+Enter your fave movie:<input ng-model="mod1"><br>
+Enter your fave movie:<input ng-model="mod2"><br>
+Enter your fave movie:<input ng-model="mod3"><br>
+Enter your fave movie:<input ng-model="mod4"><br>
+
+<leela3 attr1="HI" attr2="mod1" ></leela3>
+<leela3 attr1="leela" attr2="mod2" ></leela3>
+<leela3 attr1="how you" attr2="mod3" ></leela3>
+<leela3 attr1="doing" attr2="mod4" ></leela3>
+</div>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+angular.module('myApp',[]);
+angular.module('myApp').controller('firstctrl',['$scope','$rootScope',function($scope,$rootScope){
+	}]);
+                    //@ in the isolated scope
+angular.module('myApp').directive('leela3',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Here is your attr1:{{attr1}}.input model value is {{attr2}}.</div>',
+			scope:{
+				attr1:"@",
+				attr2:"="
+			}
+			
+				
+
+			
+		}
+	})
+
+</script>
+
+</body>
+</html>
+

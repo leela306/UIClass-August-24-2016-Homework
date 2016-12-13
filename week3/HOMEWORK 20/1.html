@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>controller</title>
+</head>
+<body>
+<div ng-app="myApp">
+<div style="border:3px solid green">
+<leela1></leela1>
+</div>
+<p leela1 style="border:3px solid red"></p>
+<div class="leela1" style="border:3px solid purple"></div>
+<br>
+<div ng-controller="firstctrl"></div>	
+<leela2></leela2>
+<leela2></leela2>
+<leela2></leela2>
+<leela2></leela2>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+angular.module('myApp',[]);
+angular.module('myApp').controller('firstctrl',['$scope','$rootScope',function($scope,$rootScope){
+	}]);
+
+angular.module('myApp').directive('leela1',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>I have designed my own custom directive </div>'
+		}
+	})
+//isoted scope
+angular.module('myApp').directive('leela2',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Enter your fav fruite<input ng-model="fav"> your fav fruit is{{fav}}</div>',
+			scope:{},
+			link:function(scope,element,attrs){
+				element.bind('mouseover',function(){
+					element.css('color','green');
+				})
+				element.bind('mouseleave',function(){
+					element.css('color','red');
+				})
+				
+
+			}
+		}
+	})
+
+</script>
+
+</body>
+</html>
+

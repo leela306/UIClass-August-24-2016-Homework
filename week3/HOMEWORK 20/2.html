@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shared Scope</title>
+</head>
+<body>
+<div ng-app="myApp">
+<div ng-controller="firstctrl"></div>
+<div style="border:3px solid green">	
+<leela1></leela1>
+<leela1></leela1>
+<leela1></leela1>
+<leela1></leela1>
+</div>
+<br>
+<div style="border:3px solid purple">
+<leela2></leela2>
+<leela2></leela2>
+<leela2></leela2>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+angular.module('myApp',[]);
+angular.module('myApp').controller('firstctrl',['$scope','$rootScope',function($scope,$rootScope){
+	}]);
+                       //shared scope 
+angular.module('myApp').directive('leela1',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Enter your fav fruite<input ng-model="fav"> your fav fruit is{{fav}}</div>'
+		}
+	})
+
+                           //isolated scope 
+
+angular.module('myApp').directive('leela2',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Enter your fav destination<input ng-model="fav"> your fav origin is{{fav}}</div>',
+			scope:{}
+		}
+	})
+</script>
+
+</body>
+</html>
+

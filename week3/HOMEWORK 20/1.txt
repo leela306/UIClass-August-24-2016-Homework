@@ -1,0 +1,52 @@
+1) In a directive -- 
+
+	Scope -- shared scope, isolate scope, inherited scope
+
+	shared scope:
+
+Answer:
+It is the default scope,we can make shared scope to isolate scope be using {} expression.
+if we change the model in one directive instance then it will automatically updated in all the directives.
+
+example:
+
+<div style="border:3px solid green">	
+<leela1></leela1>
+<leela1></leela1>
+<leela1></leela1>
+<leela1></leela1>
+</div>
+
+                 //shared scope 
+angular.module('myApp').directive('leela1',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Enter your fav fruite<input ng-model="fav"> your fav fruit is{{fav}}</div>'
+		}
+	})
+
+if you enter your fav fruit in one directive then it wll automactically reflected in other directives too.
+
+isolated scope:
+we can make isolated scope from the shared scope by using scope:{} expression.
+
+example:
+<div style="border:3px solid purple">
+<leela2></leela2>
+<leela2></leela2>
+<leela2></leela2>
+</div>
+//isolated scope 
+
+angular.module('myApp').directive('leela2',function(){
+		return{
+			restrict:'EAC',
+			template:'<div>Enter your fav destination<input ng-model="fav"> your fav origin is{{fav}}</div>',
+			scope:{}
+		}
+	})
+
+	the values will take individually  when the user enters in it because it is isolated scope.every directive is independent in this.
+
+
+
