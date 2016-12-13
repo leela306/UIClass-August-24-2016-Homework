@@ -1,0 +1,64 @@
+1) java script call apply bind methods? how to use them? what are the use cases when we have to use them?
+
+answer:
+
+both call and apply methods are using to change the value of this keyword to object name permantley.
+
+
+var place='maimi';
+var obj={
+	place:'new orleans',
+	name:'brad',
+	age:45,
+	address:{
+		state:'ca'
+	},
+	getPlace:function()
+	{
+		return this.place;
+	}
+}
+console.log(obj.getPlace());//this refers to the current object
+var func1=obj.getPlace;
+console.log(func1());//here this refers to the window that is maimi.
+
+//we are applying call method here
+console.log(func1.call(obj));//here we are forecefully replace the value of this with oject name
+//so it will give neworleans 
+
+//apply method also will do the same thing but we can pass the parameters as array
+console.log(func1.apply(obj));
+
+//here we are using function with parameters
+function add(a,b){
+	return this.c+this.d+a+b; //this refers to the object.
+}
+
+var obj1={
+	c:3,
+	d:4,
+	e:6
+}
+
+console.log(add.call(obj1,5,4));
+//apply method so will pass parameters in an array ,directly passing the array as parameter
+console.log(add.apply(obj1,[5,6]));
+
+.bind(objname)--we are creating the new function and permantley we are chnaging the value of this keyword to objName
+
+
+//bind method
+var newfun=add.bind(obj1);
+console.log(newfunc(2,3));
+both call and apply will excutes the function immidietly.
+
+references:
+1.https://alexperry.io/personal/2016/04/03/How-to-use-apply-bind-and-call.html
+2.http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/
+3.https://codeplanet.io/javascript-apply-vs-call-vs-bind/
+4.http://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
+5.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+5.
+
+
+
