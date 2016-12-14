@@ -1,0 +1,18 @@
+1) Please practice all the filters and explain them by an example?
+
+example:
+lowercase:it will changes to lowercase
+Uppercase:it will chnage to upper case.
+currency filter:by defalut it is dollar we can set whatever we want.
+Search filer:
+
+it uses the keyword filter and should mention the model name which is given for the input.
+
+limitTo:it will limit the list to items in angular.
+
+limitTo:3 means it will show only 3 items.
+
+number:4 means it will set four decimal points,by default its two decimal points.
+
+orderBy: we can set them alphatebically by using order we can use reverse numbers by assigning negitive value to it.
+

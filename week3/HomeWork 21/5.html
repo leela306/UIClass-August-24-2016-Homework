@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>Reverse filter</title>
+<body>
+<div ng-app="MyApp">
+  Input filter<input type="text" ng-model="leela" placeholder="Enter your text"/>
+  <p>{{leela}}</p>
+  <p>Reverse Filtered input: {{ leela|reverse }}</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<script>
+var app = angular.module("MyApp", []);
+app.filter("reverse", function() {
+  return function(func) {
+    var result = "";
+    func = func || "";
+    for (var i=0; i<func.length; i++) {
+      result = func.charAt(i) + result;
+    }
+    return result;
+  };
+});
+</script>
+</body>
+</html>

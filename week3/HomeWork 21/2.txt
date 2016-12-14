@@ -1,0 +1,2 @@
+2) create a custom filter for reversing a string.
+we can create the custom filters in Angular ,here I am creating a reverse custom filter in it.

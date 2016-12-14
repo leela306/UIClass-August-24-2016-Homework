@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="leela">
+<head>
+<title>ternary in class</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.over-thirty{
+color:white;
+background:green;
+}
+.under-thirty{
+color:yellow;
+background:#ff9999;
+}
+</style>
+</head>
+<body ng-controller="control">
+<input type="text" ng-model="name">
+<ul>
+<li ng-repeat="item in list" ng-class="item.age>30 ?'over-thirty':'under-thirty'">{{item.name|uppercase}}-{{item.age}}</li>
+</ul>
+
+<form ng-submit="addperson()">
+<input type="text" placeholder="name" ng-model="name">
+<input type="number" placeholder="age" ng-model="age">
+<br>
+<input type="submit" ng-model="submit">
+</form>
+<script>
+var app=angular.module('leela',[]);
+app.controller('control',function($scope){
+$scope.list=[
+            {name:'leela',age:'17'},
+ {name:'lee',age:'09'},
+ {name:'akhi',age:'30'},
+ {name:'mom',age:'40'},
+ {name:'solo',age:'35'}
+];
+$scope.addperson=function(){
+$scope.list.push({name:$scope.name,age:$scope.age});
+};
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ng options</title>
+</head>
+<body>
+<div ng-app="myApp">
+<div ng-controller="firstctrl"></div>
+
+<select ng-model="leela" ng-options="item for item in places"></select>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+angular.module('myApp',[]);
+angular.module('myApp').controller('firstctrl',['$scope','$rootScope',function($scope,$rootScope){
+	$scope.places = ["Maimi", "NewYork", "LosAngels","LosVegas","NewOrealans","Brooklyn","AtlanticCity"];
+	}]);
+                   
+</script>
+
+</body>
+</html>
+

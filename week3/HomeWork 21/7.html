@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>table creation</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<style>
+table{
+	border-collapse:collapse;
+	text-align:center;
+	margin-left:20%;
+}
+</style>
+</head>
+<body>
+<div ng-app="li" ng-controller="mycon">
+<table  border="1" width="50%" >
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+<tr ng-repeat="item in names|orderBy">
+<td>{{item.name}}</td>
+<td>{{item.age}}</td>
+</tr>
+</table>
+
+</div>
+
+<script>
+var app=angular.module('li',[]);
+app.controller('mycon',function($scope){
+	$scope.names=[
+	{
+	name:'lee',
+	age:'20'
+},
+
+{
+	name:'leelll',
+	age:'24'
+		},
+
+	{
+		name:'leeakh',
+		age:'25'
+	},
+
+	{
+		name:'leebak',
+		age:'25'
+	},
+	]
+});
+
+</script>
+
+</body>
+</html>

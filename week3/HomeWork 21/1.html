@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Search filtering</title>
+</head>
+<body>
+<div ng-app="myApp">
+<div ng-controller="frst">
+your currency:<input type="text" ng-model="price">
+<p>{{price|currency:"Rs":0}}</p>
+<br>
+<input type="text" ng-model="abc">
+<p ng-repeat="item in list|filter:abc">{{item.name}}<br>{{item.age}}</p>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script>
+angular.module('myApp',[])
+angular.module('myApp').controller('frst',['$scope','$rootScope',function($scope,$rootScope){
+	
+$scope.list=[
+{name:'AKhshith',age:'20'},
+{name:'Cheguevara',age:'20'},
+{name:'surekha',age:'200'},
+{name:'sarayu',age:'10'},
+{name:'choudhary',age:'50'}
+]
+              }]);
+               </script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+<p>ng otpions is displaying your favourite destinations in united states</p>
+
+<select ng-model="origin" ng-options="item for item in places">
+</select>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.places = ["Maimi", "NewYork", "LosAngels","LosVegas","NewOrealans","Brooklyn","AtlanticCity"];
+});
+</script>
+
+
+
+</body>
+</html>

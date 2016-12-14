@@ -1,0 +1,7 @@
+explain with an example about ng-repeat and ng-options. also look into diff between ng-repeat and ng-options. 
+
+ answer:
+ ng-options will use in the select tag in the html when we are using select then we need to use the ng-model.ng-options is like dropdown menus in html.
+
+ ng-repeat: it is like for loop,it will repeat the number of items in the html.
+ if we are having ten items then in angular we use ng-repeat to display all of the items.
