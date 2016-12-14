@@ -1,0 +1,11 @@
+2) what is nodejs and why do we need to nodejs?
+
+Answer:
+
+Node JS is the environment of the JavaScript .It is used for the server side applications .by using node js we can run the JavaScript programming at the server side.nwe can create the local server for our website and can run the programs at the server. Run Node as command prompt can monitor all the changes in the server. 
+
+We can use Node Js to connect the server with the database. Server will connect the database automatically and communicate with it, in order to send response to the client. Server connects with other servers, clients and databases at a time. It should serve multiple clients at the same side, needs to handle the congestion of the network. 
+
+we can install all the NPM(node package manager)modules using node Js .can install and maintain the” Packet JSON” which will give all the list of dependencies that are included in the project.can add the nodemon module to track the changes in the server. In client side if we made changes in the program then  need to refresh the page every time but at the server side if we install the nodemon module then it will restart the sever automatically there is no need to refresh every time. “Npm install –g nodemon –save” command will add the nodemon application to the npm modules.
+
+Bower components are used to add all the dependencies into the “packet JSON”. There is no need to keep the files or include the CDN in the script tags .Just by adding the bower we can directly have all the bootstrap, Jquery, angular js and mongoDB dependencies in the project.npm install bower –g command in the node js will add the bower components. Here –g indicates that bower will install globally in the system. Packet JSON gives all the dependencies with version names so that we can easily recognize what kind of changes we need to do if we are facing any problems in it.
