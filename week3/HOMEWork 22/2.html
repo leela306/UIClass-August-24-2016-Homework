@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Service in AngularJs</title>
+</head>
+<body>
+<div ng-app="myApp">
+
+<div ng-controller="controller1">
+</div>
+
+<div ng-controller="controller2">
+</div>
+
+<div ng-controller="controller3">
+</div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script>
+
+angular.module('myApp', []);
+
+angular.module('myApp').controller('controller1', ['$scope', 'service', function($scope,service){console.log(service.add(2,3));
+			}]);
+
+angular.module('myApp').controller('controller2', ['$scope','service', function($scope, service){
+console.log(service.add(4,5));
+			}]);
+
+angular.module('myApp').controller('controller3', ['$scope','service1', function($scope, service){
+console.log(service.mul(10,20));
+			}]);
+
+angular.module('myApp').service('service', function() {
+				this.add = function(l,m) {
+					return l+m;
+				}
+			})
+angular.module('myApp').service('service1', function() {
+				this.mul = function(l,m) {
+					return l*m;
+				}
+			})
+
+		</script>
+	</body>
+</html>

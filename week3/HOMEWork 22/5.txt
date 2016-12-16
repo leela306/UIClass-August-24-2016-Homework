@@ -1,0 +1,26 @@
+//post method is create a new record
+$scope.data={
+	name:'leela',
+	age:20,
+	place:'New jersey',
+	movie:'theory'
+}
+//we are calling AJAX means sending a request
+	$http({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/',
+		//method is Post
+		method:'POST',
+		//we are passing the data here
+		data:data,
+
+		}).success(function(data) {
+					// create a new modle $scope.ajaxData and asigning a value response from ajax
+					$scope.ajaxData = data;
+					console.log('success : ',data);
+				}).error(function(xhr){
+					console.log('error : ', xhr);
+				})
+			}]);
+
+	})

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GET method</title>
+</head>
+<body>
+<div ng-app="myApp">
+
+<div ng-controller="controller">
+<table>
+<thead>
+<tr>
+							<th>Name</th>
+							<th>Age</th>
+							<th>ID</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in ajaxData track by $index">
+							<td>{{item.name}}</td>
+							<td>{{item.age}}</td>
+							<td>{{item.id}}</td>
+						</tr>
+					</tbody>
+				</table>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script>
+angular.module('myApp', []);
+     angular.module('myApp').controller('controller', ['$scope', '$http', function($scope, $http){
+
+//GET method is used to retrive the infromation 
+//we are calling AJAX means sending a request
+$http({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/',
+		//method is GET 
+		method:'GET',
+		//success method only excutes when we get the response from the server
+			}).success(function(data) {
+					// create a new modle $scope.ajaxData and asigning a value response from ajax
+					$scope.ajaxData = data;
+					console.log('success : ',data);
+				}).error(function(xhr){
+					console.log('error : ', xhr);
+				})
+			}]);
+</script>
+
+</body>
+</html>

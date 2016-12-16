@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>factory in Angular</title>
+		<style>
+		body{
+			width:50%;
+			text-align:center;
+		}
+		</style>
+	</head>
+	<body>
+<div ng-app="myApp" >
+<p>Details of first newbie</p>
+<div ng-controller="controller" style="border:4px solid green;font-family:sans-serif;font-size:18px;color:#1C39BB">
+
+This is my full name :<input ng-model="data.fullName"><br>
+my age: <input type="text" ng-model="data.age"><br>
+Favourite movie:<input type="text" ng-model="data.movie">
+</div>
+<br>
+<p>Detials of other newbie</p>
+<div ng-controller="controller1" style="border:4px solid red;font-family:sans-serif;font-size:18px;color:navy">
+
+This is my full name :<input ng-model="data.fullName"><br>
+my age: <input type="text" ng-model="data.age"><br>
+Favourite movie:<input type="text" ng-model="data.movie">
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script>
+angular.module('myApp', []);
+angular.module('myApp').controller('controller', ['$scope', 'factory', function($scope, factory){
+$scope.data = factory;
+}]);
+
+angular.module('myApp').factory('factory', function() {
+return {
+fullName: 'leela', 
+age : '22',
+movie:'fiftyshades'
+}
+});
+angular.module('myApp').controller('controller1', ['$scope', 'factory', function($scope, factory){
+$scope.data = factory;
+}]);
+
+angular.module('myApp').factory('factory', function() {
+return {
+fullName: 'lisa', 
+age : '23',
+movie:'ocean11'
+}
+});
+
+
+		</script>
+	</body>
+</html>

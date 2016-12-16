@@ -1,0 +1,25 @@
+2.what is service write and exampleService
+
+service:
+
+service is also singleton(only one object through out the entire application)like factory.there si no need to use any return keyword in service.it can not all datatypes of the javascript like factory ,it just return only object type.
+
+example:
+
+		angular.module('myApp').service('serv1', function() {
+			this.add = function(l,m) {
+				return l+m;
+			}
+		});
+
+we can create service from the factory:
+
+	angular.module('myApp').factory('service1', 
+		return new function() {
+			this.add = function(l,m) {
+				return l*m;
+			}
+		}
+	);
+
+	

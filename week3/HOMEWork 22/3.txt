@@ -1,0 +1,13 @@
+3.what are diff between factory and service? are both of them singleton? what is singleton?
+
+answer:
+
+factory:
+
+we can use all the data types in the factory and we should use a keyword return in factory.
+ 
+service:There is no need to use a return keyword here nad it can only use object datatype only.
+
+both factory and serivce are singletons.
+
+singleton means we will use only one object through out the entire application in the anular Js.

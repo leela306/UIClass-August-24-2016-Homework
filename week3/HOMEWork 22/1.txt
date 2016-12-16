@@ -1,0 +1,23 @@
+1.what is factory write and example?
+
+factory :
+we can use (return)all the datatypes(javascript)like number,string,boolean,object,  function and undefined.we should use return keyword in the factory.
+Factory is a singleton means we will use only one object through out the entire application in the anular Js.
+
+example:
+		angular.module('myApp').factory('factory', function() {
+			return {
+				fullName: 'leela', 
+				age : '22',
+				movie:'fiftyshades'
+			}
+		})
+
+
+injecting the  factory into a controller ,we can do that in the angular JS.
+
+		angular.module('myApp').controller('controller1', ['$scope', 'factory', function($scope, factory){
+				$scope.data = factory;
+			}]);
+
+	

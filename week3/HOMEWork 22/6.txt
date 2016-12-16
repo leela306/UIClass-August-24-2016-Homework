@@ -1,0 +1,25 @@
+/PUT method is edit the existing record and it needs the ID too
+
+$scope.data={
+	name:'leela choudhary',
+	age:20,
+	place:'New jersey',
+	movie:'theory',
+	from:'new delhi'
+}
+//we are calling AJAX means sending a request
+	$http({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/5824f15b66e7190100e967e9',
+		//method is PUT
+		method:'PUT',
+		//we are passing the data here
+		data:data,
+}).success(function(data) {
+					// create a new modle $scope.ajaxData and asigning a value response from ajax
+					$scope.ajaxData = data;
+					console.log('success : ',data);
+				}).error(function(xhr){
+					console.log('error : ', xhr);
+				})
+			}]);

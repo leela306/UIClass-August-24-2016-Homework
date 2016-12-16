@@ -1,0 +1,30 @@
+4.how to make ajax calls using $http  and all methods of http like(get, post, put and delete)?
+
+answer:
+
+HTTP methods 
+GET...to retrieve the information 
+PUT..updating the existing record
+POST...creating a new record
+DELETE...deleting the existing record.
+
+1.GET method
+BY default it will take get method
+$http is used to make ajax calls in Angular JS.
+
+example:
+
+$http({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/',
+		//method is GET 
+		method:'GET',
+		//success method only excutes when we get the response from the server
+		success:function(data){
+           console.log(data);
+		},
+		error:function(xhr){
+            console.log(xhr); 
+		}
+
+	})
