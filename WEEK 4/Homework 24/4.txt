@@ -1,0 +1,7 @@
+4.ui.router to implement routing?
+
+In angular ui.router used  for the routing which will chnage the urls when user changes them.
+
+when we change the URL ,page will automatically changes.SPA means only some portion of the wbesite changes and when we chnage URL then it will reflect the changes in the ng-view directive.
+
+I have implemented both templete routing,for the templete there is need for the server.(local host).

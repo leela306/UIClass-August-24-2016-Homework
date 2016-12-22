@@ -1,0 +1,11 @@
+2.promise.all?
+in promise chaining:
+it will excute first the script excution then the excutes the resolve or reject block which is depends upon the programmer which code they called first.if we mention both then it will excutes the code which called first.
+
+defer.reject()//resolve will call
+defer.resolve()//resolve only call.
+
+in promise.all:
+
+we can set some conditions by using the promise.all.here I have used the $timeout function and used the if else method in deffered object creation.
+and passed paramenters to the function which is working very fine.

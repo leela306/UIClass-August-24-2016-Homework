@@ -1,0 +1,9 @@
+3.what is single page applications? how to write a program using, using ngRoute to develop single page applications.
+
+Routing is used for single page applications in ANgular.
+
+Single page applications means header and footer remains the same and only section is going to change is the main area section.This is the single page application (SPA) so there is no need to open the webpage in the next windows, the page itself display in that main content Area only. I have designed this using [$ngRoute] directive and set up the templates for the web page too.
+
+I have implemented both templete and templeteURL,for this we need set up the server we can set app that by using node Js,we can setup the local host or http server.
+
+when we change the URL ,page will automatically changes.SPA means only some portion of the wbesite changes and when we chnage URL then it will reflect the changes in the ng-view directive.

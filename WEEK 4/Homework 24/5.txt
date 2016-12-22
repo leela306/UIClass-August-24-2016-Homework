@@ -1,0 +1,3 @@
+5.diff ui.router and ngRoute?
+
+both are used for the routing in agular js in order to achive the routing we need to inject the ['ngroute'] module and ['uirouter'] module into the array of dependencies in anular.both will achieve the single page applications.

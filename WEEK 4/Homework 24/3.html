@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ngroute</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
+</head>
+<body>
+<div ng-app="fifty">
+<div ng-view></div>
+<script>
+var app=angular.module('fifty',['ngRoute']);
+app.config(['$routeProvider',function($routeProvider){
+	$routeProvider
+	.when('/home',{
+		template:'welcome'
+	})
+	.when('/directory',{
+		template:'geez'
+		})
+	.when('/lice',{
+		template:'gosh'
+	})
+     .otherwise({
+     	redirectTo:'/home'
+     });
+	}]);
+</script>
+</div>
+</body>
+</html>
