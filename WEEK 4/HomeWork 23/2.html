@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>POST method</title>
+</head>
+<body>
+<div ng-app="myApp">
+
+<div ng-controller="controller" >
+Enter name:<input ng-model="firstName"><br>
+Enter Age:<input ng-model="age"><br>
+Enter place:<input ng-model="place"><br>
+Enter movie:<input ng-model="movie"><br>
+<button ng-click="Create()">create a new record</button>
+<table>
+<thead>
+<tr>
+							<th>Name</th>
+							<th>Age</th>
+							<th>place</th>
+							<th>movie</th>
+							<th>ID</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in data track by $index">
+							<td>{{item.name}}</td>
+							<td>{{item.age}}</td>
+							<td>{{item.place}}</td>
+							<td>{{item.movie}}</td>
+							<td>{{item.id}}</td>
+						</tr>
+					</tbody>
+				</table>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script>
+angular.module('myApp', []);
+     angular.module('myApp').controller('controller', ['$scope', '$http', function($scope, $http){
+$scope.create=function(){
+	var firstName=$scope.firstName;
+	var age=$scope.age;
+	var place=$scope.place;
+	var movie=$scope.movie;
+	var RequestData={
+		name:firstName,
+		age:age,
+		palce:place,
+		movie:movie
+	}
+$http({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/',
+		//method is GET 
+		method:'POST',
+		data:requestData
+		//success method only excutes when we get the response from the server
+			}).success(function(data) {
+					// create a new modle $scope.ajaxData and asigning a value response from ajax
+					
+					console.log(data);
+					$scope.data = data;
+					getdatafromserver();
+				}).error(function(xhr){
+
+				})
+}
+//GET method is used to retrive the infromation 
+//we are calling AJAX means sending a request
+function getdatafromserver(){
+
+
+$http({
+		//this is URL we are using
+		url:'http://rest.learncode.academy/api/johnbob/friends/',
+		//method is GET 
+		method:'GET',
+		//success method only excutes when we get the response from the server
+			}).success(function(data) {
+					// create a new modle $scope.ajaxData and asigning a value response from ajax
+					console.log(data);
+					$scope.data = data;
+					
+				}).error(function(xhr){
+
+				})
+			}
+getdatafromserver();
+			}]);
+</script>
+
+</body>
+</html>

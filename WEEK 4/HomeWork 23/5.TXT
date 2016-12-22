@@ -1,0 +1,29 @@
+5.What is $q?
+
+$q is a  promise (deferred) is a very simple and powerful tool for asynchronous development.it is used create the deferred object.
+
+Asycnhronous development means by default comipler will excutes the code but asynchronous means we will set the priority,fist which method should excutes first.
+it has two blocks resolve and reject.
+we will set priorities in Asychrounous method so excution of the methods completly depends upon us.
+
+example:
+creation of defered object
+
+var defer = $q.defer() ; 
+//  new deffered object has been created.
+
+//defer.promise.then(resolveBlock, rejectBlock);
+
+// registering functions to be excuted on a resolve and reject
+defer.promise.then(function(data){
+	console.log('this is resolved');
+}, function(reject){
+	console.log('this is rejected');
+});
+
+defer.resolve(data);//this will invoke resolve block
+defer.reject(reject);// this will invoke a reject block
+
+here i have invoked both resolve and reject but it will excutes the first declarative method.
+
+it is asynchronous --it waits for the current script execution to be done and then excutes either resolve or reject which ever is called first.It will wait for the entire script.
