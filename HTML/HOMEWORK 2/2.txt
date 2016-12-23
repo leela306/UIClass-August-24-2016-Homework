@@ -1,0 +1,9 @@
+2.Why we need semantic elemants?Advantages of them?
+
+Answer:
+there are extra features which we are not available in the HTML4,these are provided in HTML5 only.extra features which can make the documnet more meaningful nad well organizaed way.
+
+They will make the document more well organised structured way.
+
+A semantic element clearly describes its meaning to both the browser and the developer.Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+

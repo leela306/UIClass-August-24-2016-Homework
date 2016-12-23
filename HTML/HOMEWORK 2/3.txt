@@ -1,0 +1,45 @@
+3) Reaserach and write the description, and example html all the tags : article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time
+
+answer:
+
+1.article:
+The <article> element specifies independent, self-contained content.
+The <section> element defines section in a document.You will also find pages with <section> elements containing <section> elements, and <article> elements containing <article> elements.
+
+2.aside:
+The <aside> element defines some content aside from the content it is placed in (like a sidebar).The aside content should be related to the surrounding content.
+
+3.summary:
+The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+
+4.Details:
+The <details> tag specifies additional details that the user can view or hide on demand.The <details> tag can be used to create an interactive widget that the user can open and close. Any sort of content can be put inside the <details> tag.
+
+5.figure:
+The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.While the content of the <figure> element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+
+6.figcaption:
+The <figcaption> tag defines a caption for a <figure> element.The <figcaption> element can be placed as the first or last child of the <figure> element.
+
+7.footer:
+The <footer> tag defines a footer for a document or section.A <footer> element should contain information about its containing element.You can have several <footer> elements in one document.
+
+8.header:
+The <header> element represents a container for introductory content or a set of navigational links.one or more heading elements (<h1> - <h6>),logo or icon,authorship information.
+
+9.main:
+The <main> tag specifies the main content of a document.The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+
+ 10.mark:
+ The <mark> tag defines marked text.Use the <mark> tag if you want to highlight parts of your text.
+
+ 11.nav:
+ The <nav> tag defines a set of navigation links.Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.
+
+ 12.section:
+The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+
+13.time:
+The <time> tag defines a human-readable date/time.
+
+

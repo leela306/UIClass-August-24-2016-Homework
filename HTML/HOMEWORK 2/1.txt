@@ -1,0 +1,10 @@
+1.what are semantic element? 
+
+answer:
+
+semantic elements are not availble in the HTML4,they are in HTLM5.
+Semantic elements are the elements who has the meaning for the tags.
+for example:section,header ,footer,menu.With HTML4, developers used their own id/class names to style elements: header, top, bottom, footer, menu, navigation, main, container, content, article, sidebar, topnav, etc.
+
+This made it impossible for search engines to identify the correct web page content.With the new HTML5 elements (<header> <footer> <nav> <section> <article>), this will become easier.
+
