@@ -1,0 +1,9 @@
+2) package.json? what are diff parts of package.json file?
+answer:
+package.json is the folder where all the dependencies of the project are saved.It is useful when to store all the versions like angular and boostrap and can view the project dependencies diredctly.
+
+npm init
+npm install --save angular js
+npm install --save bootstrap
+
+package.json will write all the modules and versions in dependencies and it will use the commands npm install

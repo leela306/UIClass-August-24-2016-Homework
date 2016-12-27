@@ -1,0 +1,24 @@
+ 6.how to develop web services in node? routing?
+ 
+ answer: we can use web servrices by using the http.
+ var http = require('http');
+
+require('http') --> import
+
+ans making it available using var http.
+
+we can set up the server for the routing using node js.
+we need to follow these all steps to set up the server.
+
+need to  install packet.json 
+
+1. Change the drive from C to users where project is saved.
+2. Cd path 
+3. npm init 
+It will install packet.json
+4.npm install express
+Or npm install –g epress
+5.npm start.
+
+after setting up the server,we can achieve the routing from it.
+

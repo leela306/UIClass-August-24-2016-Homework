@@ -1,0 +1,26 @@
+4) diff between dependencies and dev-dependencies?
+
+answer:
+
+dependencies are used while running and dev dependencies are used in the building process.
+
+dependencies:
+
+they are running the program if some this is need.dependencies will 
+installing a dependecies.
+
+example:
+
+npm install --save jquery
+npm install --save angular js
+npm install --save bootstrap
+npm install --save mongodb
+npm install --save nodemon
+
+
+dev-dependicies:
+if we use it as a part of build process then we use dev-dependencies.4
+installing a dev-dependecies
+
+npm install --save -dev nodemon.
+

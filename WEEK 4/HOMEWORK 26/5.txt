@@ -1,0 +1,10 @@
+ 5.MEAN stack?
+ answer:
+ MEAN:
+
+ M----Mongodb
+ E---Express.js
+ A----AngularJS
+ N----Node Js
+
+ Mean collection of JavaScript-based technologies — MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications.From the client and server sides to databases.MEAN.JS is a full-stack JavaScript solution that helps you build fast, robust, and maintainable production web applications using MongoDB, Express, AngularJS, and Node.js 

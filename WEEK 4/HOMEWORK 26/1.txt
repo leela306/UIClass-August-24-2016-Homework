@@ -1,0 +1,24 @@
+1) npm commands? all of them? explain them with options?
+
+answer:
+
+npm is node packet manager it will install all the modules in the node js and it will use the npm command to download the modules.
+
+example:
+
+npm install bower(here bower is the module name)
+
+npm install moduleName
+then it will create bower folder in it.
+npm install express
+npm install nodemon 
+
+nodemon is used to track the server changes ,when nodemon is install then there is no need to restart the server ,it will refresh the page automatically.monitor and display the chnages on the screen.
+
+
+
+
+
+
+
+
