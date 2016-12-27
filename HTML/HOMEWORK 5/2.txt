@@ -1,0 +1,19 @@
+2) float in css?
+
+answer:
+
+The float property specifies whether or not a box (an element) should float.
+we have float to move the elements or images to  top,left,right,bottom.
+
+1.foalt:top
+it will move the element from the top.
+
+2.float:left
+it will place the elements at the left side.This float:left will be very useful in designing of the navigation bars.
+
+3.float:right
+it will place the elements  at the right.this float:right will be very useful in designing of the navigation bars where one anchor tag place at the right top most corner.
+
+4.float:bottom
+it will place the elements  at the top.this float:left will be very useful in designing of the navigation bars.
+

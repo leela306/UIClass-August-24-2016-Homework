@@ -1,0 +1,20 @@
+1) Position properties?
+
+answer:
+
+position:
+
+they are four position properties available in html in them sttaic property is the deafault one.
+
+1.static:if you do not want the top, left, right, bottom to be applied. Then we can use static.
+
+2.relative:from the default position we can move top, left, right, bottom.
+
+3.absolute:
+from the page level (somes times)
+from parent relative element (if it find a parent relative element) --
+scroll would work.
+
+4.fixed:
+always from the page level
+scroll would not work
