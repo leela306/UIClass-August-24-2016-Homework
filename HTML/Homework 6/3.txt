@@ -1,0 +1,14 @@
+3) for 1 row how many columns do we have in bootstrap?
+
+answer:
+
+It is very easy to implement grid system by using bootstrap.It allows one row into up to 12 colums.
+
+example:
+
+<div class="row">
+<div class="col-xs-3" style="background-color:lavender;padding :14px 16px; border:1px solid black ">col-xs-3</div>
+<div class="col-xs-4" style="margin=0; background-color:lavender;padding :14px 16px; border:1px solid black ">col-xs-3</div>
+<div class="col-xs-6" style="margin=0; background-color:lavender;padding :14px 16px; border:1px solid black ">col-xs-3</div>
+<div class="col-xs-12" style="margin=0; background-color:lavender;padding :14px 16px; border:1px solid black ">col-xs-3</div>
+

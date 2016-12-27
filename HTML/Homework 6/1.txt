@@ -1,0 +1,9 @@
+1.What is bootstrap ? 
+
+answer:
+
+Bootstrap is a CSS library.It supports responsive web design.It is very easy to implement grid system by using bootstrap.It provides styling for HTML elements like buttons, navigations, image carousel, and forms, dropdown menus.
+
+Bootstrap will make webpage compatible with screen sizes like mobiles, desktop and tablets. the screen sizes are available in the bootstrap are xs(extra small),sm(small), md(medium), lg(large).
+
+bootstrap xs is used for phones, sm for the tablets ,md is used for desktops and lg is used for the larger desktops. Can simply download the predesigned bootstrap from available source and can easily design our own web site using bootstrap themes using external html CSS concepts. By using the bootstrap, can easily add new styling icons and add more elegance to the web pages with in the limited time span.

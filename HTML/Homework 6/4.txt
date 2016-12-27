@@ -1,0 +1,12 @@
+4) what is xs, sm , lg, md ? implement an example in using bootstrap?
+
+answer:
+
+bootstrap provides the sizes xs(extra small),sm(small).lg(large),md(meduim).
+
+bootstrap xs is used for phones, sm for the tablets ,md is used for desktops and lg is used for the larger desktops. Can simply download the predesigned bootstrap from available source and can easily design our own web site using bootstrap themes using external html CSS concepts.
+
+.btn-lg..large size button
+.btn-md..medium size button
+.btn-sm..small size button
+.btn-xs..extra small size button

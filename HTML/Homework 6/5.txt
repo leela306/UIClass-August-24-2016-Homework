@@ -1,0 +1,4 @@
+5) bootstrap inputs, alerts, buttons, forms, ......?
+answer:
+
+designed in the program.
