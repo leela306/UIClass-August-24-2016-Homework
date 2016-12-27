@@ -1,0 +1,28 @@
+5) conditions and loops?
+if else condition:
+first it will check the if condition if it is true then it it will excutes ,if not then else condition is excutes.
+if(condition){
+	true//excutes not then control pass to else statement
+	}
+else{
+if statement is false then only else excutes
+{
+
+switch:
+switch excutes the block of code based on the user input.it is very hectic to use if else statements.if your using switch then you can save the memory because if else consumes large amount of memory.switch will make the code so ease to use.
+
+swicth()	{
+	case:
+	break;
+	case:
+	break;
+	default:
+
+}
+
+references:
+1.http://www.w3schools.com/js/js_if_else.asp
+2.http://blog.wax-o.com/2015/05/an-alternative-to-if-else-and-switch-in-javascript/
+3.https://www.kirupa.com/html5/conditional_statements_if_else_switch_javascript.htm
+4.http://stackoverflow.com/questions/5464362/javascript-using-a-condition-in-switch-case
+5.https://www.safaribooksonline.com/library/view/high-performance-javascript/9781449382308/ch04s02.html

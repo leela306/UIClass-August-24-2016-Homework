@@ -1,0 +1,7 @@
+1) why we use java script?
+
+answer:
+
+JavaScript is a programming language. It is used to control the behavior of the web pages on the client side of the browser, server-side programs. JavaScript supports object orientated as well as procedural orientated programming.
+
+we can use the JavaScript functions within the WebPages. JavaScript controls the events like “onclick”, “onmouseover”,”onchange”, “onmouseout”, “onload” to display the pop ups within the webpage.When the user clicks on the button then only the pop up will appear. The action is controlled by the JavaScript only but user needs to perform the click event. User can print the entire webpage by passing the command “window.Print ()” in JS file using JavaScript only.

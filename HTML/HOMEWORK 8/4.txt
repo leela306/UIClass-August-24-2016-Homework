@@ -1,0 +1,43 @@
+4) java script data types.
+
+answer:
+
+string
+String : A strings of any characters enclosed in quotes is a string primitive.
+
+number
+Number : A number by itself is a number primitive, all numbers in JavaScript are 64-bit floating-point numbers.
+
+boolean
+Boolean : It will store Variables or expressions which are either true or false.
+
+object
+Object: A collections of properties and methods. In Javascript, anything that is not a primitive is an Object.
+
+Array
+Arrays : Arrays are regular objects, both objects and arrays can have properties and methods.
+
+undefiend
+Undefined : It treated as a variable that has been declared, but has never had a value assigned to it.
+
+null
+Null : It has only one value in JavaScript: null.
+
+function
+function is also one of the javascript datatype.
+
+Undefined:
+we tried to create a value but did not assign value to it.undefined means that the variable has not been declared, or has not been given a value.
+
+Examples:
+
+var leela;//shows undefined
+
+typeof leela;//shows undefined
+
+Null:
+intentionally we are creating a value blank.null is a special object because typeof null returns 'object'.
+
+Examples:
+
+var leela = null; //shows null

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>if else/switch</title>
+</head>
+<body>
+<script>
+
+function person(name,age){
+if(age>18){
+	document.write("hi  "+name+"your eligible to vote"+"<br>");
+}	
+else {
+	document.write(name+"your not eligible"+"<br>");
+}
+}
+person("leela",20);
+person("akhi",10);
+document.write("<br>");
+
+var movie="belami";
+switch(movie){
+	case "ocean":
+	document.write("it is bradpitt movie");
+	break;
+	case "smith":
+	document.write("it is angelina movie");
+
+	break;
+	case "belami":
+	document.write("it is robertpattinson movie");
+	break;
+	default:
+	document.write("it is jamie dornan movie");
+}
+</script>
+
+</body>
+</html>

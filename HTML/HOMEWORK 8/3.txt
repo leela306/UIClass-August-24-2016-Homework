@@ -1,0 +1,5 @@
+3) what are events in a web page? how can you recognize them?
+
+answer:
+
+we can use the JavaScript functions within the WebPages. JavaScript controls the events like “onclick”, “onmouseover”,”onchange”, “onmouseout”, “onload” to display the pop ups within the webpage.When the user clicks on the button then only the pop up will appear. The action is controlled by the JavaScript only but user needs to perform the click event. User can print the entire webpage by passing the command “window.Print ()” in JS file using JavaScript only

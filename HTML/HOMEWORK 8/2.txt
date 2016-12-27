@@ -1,0 +1,16 @@
+2) what is dom manipulation?
+
+answer:
+
+Document Object Model is formed the tree based structure it has the document as main element ,root element as html and that root has two children those are head and body then they are sub divided into the tags like p,div,a,h1 to h6 tags.
+
+The HTML DOM is a standard object model and programming interface for HTML. 
+
+DOM defines:
+
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+
+The Document Object Model is a platform- and language-neutral interface that will allow programs and scripts to dynamically access and update the content, structure and style of documents. The document can be further processed and the results of that processing can be incorporated back into the presented page. This is an overview of DOM-related materials here at W3C and around the web.

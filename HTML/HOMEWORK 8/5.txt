@@ -1,0 +1,44 @@
+5) conditions and loops?
+
+answer:
+for loop:
+for(intiliazation,condition,increment)
+{
+statement;	
+}
+step-1:fist the value is declared in the intiliazation section.
+step-2:it will check the condition ,if the condition is true then the loop starts executing the statements with in the loop,if condition is false then the loop terminates.
+step-3:after statement execution incrementation section will increment the values.
+
+ while loop:
+
+ while(condition){
+ statement;
+ increment;
+ }
+ while loop check the condition first if the condition is true then loop starts excuting the statements after that it will increment.
+
+ step 1:check the condition
+ step 2:if condition is true than excutes,if not then terminates
+ step 3:increment the value.
+
+do while loop:
+
+ do{
+statement;
+increment;
+ }
+ while();
+ do while loop first excutes the statements then increment the value and it will check the condtion 
+
+ step1:first excutes the statement
+ step2:increment the value
+ step 3:it will check the condition.
+
+ references:
+ 1.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration
+ 2.https://www.tutorialspoint.com/javascript/javascript_for_loop.htm
+ 2.https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+ 4.http://www.w3schools.com/js/js_loop_for.asp
+ 5.https://www.codecademy.com/en/forum_questions/51068e93f73ad4947a005629
+
