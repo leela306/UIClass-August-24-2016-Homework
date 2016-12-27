@@ -1,0 +1,11 @@
+3) CSS BOX Model & sizing, display property values, css properties?
+answer:
+
+The CSS3 box-sizing property:
+It allows us to include the padding and border in an element's total width and height.
+
+display property values:
+The display property specifies the type of box used for an HTML element.
+
+css properties:
+Css helps to design the html page in a elegant way it helps make more attractive web pages.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+    background-color: lightgreen;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: royalblue;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    body {
+        background-color: crimson;
+    }
+}
+</style>
+</head>
+<body>
+<p>Resize the browser window. When the width of this document is less than 400 pixels, the background-color is "royalblue", otherwise it is "crimson".</p>
+
+<p>Resize the browser window. When the width of this document is between 400 pixels to 700 pixles, the background-color is "crimson"</p>
+
+</body>
+</html>

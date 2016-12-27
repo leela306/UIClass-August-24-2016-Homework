@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1.hidden {
+	
+    visibility: hidden;   
+}
+#abc{
+	color:#f50057;
+    padding:3px;
+    border-radius:20px;
+    font-size: 18px;
+    font-family:sans-serif;
+}
+h1.leela {
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div id="abc">
+<h1>This is a visible heading</h1>
+<h1 class="hidden">This is a hidden heading</h1>
+<p>Notice that the hidden heading still takes up space.</p>
+</div>
+
+
+<h1>This is a visible heading</h1>
+<h1 class="leela">This is a hidden heading</h1>
+<p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+</body>
+</html>

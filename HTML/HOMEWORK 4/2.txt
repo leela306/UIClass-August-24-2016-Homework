@@ -1,0 +1,27 @@
+2) Psuedo Classes and Psuedo Elements?
+
+answer:
+A pseudo-classes:
+pseudo-classe is used to define a special state of an element.
+
+Example:
+
+1.Style an element when a user mouses over it, when the user visited and unvisited links differently and when an element when it gets focus.
+
+2.The :first-child pseudo-class matches a specified element that is the first child of another element.
+3.nth-child(3):third child in html document.
+
+.A CSS pseudo-element is used to style specified parts of an element.
+
+psuedo elements:
+they are indicated by ::.
+
+example:
+it can be used to:Style the first letter, or line, of an element
+Insert content before, or after, the content of an element.
+
+1.p::first-line:only fisr line will chnage in the html document.
+2.p::first-letter:first letter in the every paragraph chnages.
+
+
+

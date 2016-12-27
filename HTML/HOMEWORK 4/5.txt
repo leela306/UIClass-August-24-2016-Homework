@@ -1,0 +1,6 @@
+5) css properties ?
+
+answer:
+Css helps to design the html page in a elegant way it helps make more attractive web pages.
+
+I have designed the UCM web page using the CSS properties.

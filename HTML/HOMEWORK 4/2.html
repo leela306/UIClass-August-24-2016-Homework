@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+text-decoration: none;
+	text-align:center;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+a{
+	text-align:center;
+}
+#abc{
+	background-color:teal;
+	text-align:center;
+}
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: crimson;
+}
+
+/* mouse over link */
+a:hover {
+    color:maroon;
+    background:purple;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+p:nth-child(5) {
+    color:red;
+} 
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color:royalblue;
+    font-size: xx-large;
+}
+</style>
+</head>
+<body>
+<p>Leela is the owner of this html document.</p>
+<p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p><br>
+ <a href="https://www.youtube.com/" style="text-align:center">Miami</a>
+ <p id="abc">Miami is an international city at Florida's southeastern tip. Its Cuban influence is reflected in the cafes and cigar shops that line Calle Ocho in Little Havana. On barrier islands across the turquoise waters of Biscayne Bay is Miami Beach, home to South Beach. This glamorous neighborhood is famed for its colorful art deco buildings, white sand, surfside hotels and trendsetting nightclubs</p>
+<p>This is some text.</p>
+<p>This is some text.</p>
+<p><b>Note:</b> For :first-child to work in IE8 and earlier, a DOCTYPE must be declared.</p>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+1) Media Queries --> screen media queries (min-width) and max-width?
+
+Answer:
+
+media queries:
+
+Media Queries are used to set the window width and height. They can make the webpage responsive like bootstrap. Media Queries can change the effects by using measurements and can apply the different types of effects in defining the pixels and widths. Users can observe the changes while adjusting the sidebar from min-width to max-width. Can easily change the behavior of the website by using Media Queries.
+
+Media Queries add Transition and animation effects to the website. Can add more affects to image carousel, fixed layout tabs, adding items to the dropdown menus, navigation bars, sliding up the paragraphs, changing the background color of the paragraphs.
+
+
+@media screen and (min-width:400px) {
+Resize the browser window. When the width of this document is less than 400 pixels, the background-color is "royalblue", otherwise it is "crimson".
+}
+
+@media screen and (max-width:700px) {
+
+Resize the browser window. When the width of this document is between 400 pixels to 700 pixles, the background-color is "crimson".
+	
+}
+
+
