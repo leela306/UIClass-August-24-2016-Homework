@@ -1,0 +1,16 @@
+attributes:
+this would applied to all the element with the matching attribute
+syntax :
+			<tagName attr1>content </tagName>
+		
+1.[attr1=value]:
+Style <a> elements with a target="_blank"
+
+2.[attr1^=starts with value]
+Set a background color on all <div> elements that have a class attribute value that begins with "test".
+
+3.[attr1$=end with value]
+Set a background color on all <div> elements that have a class attribute value that ends with "test".
+
+4.[attr1*= substring with value]
+Set a background color on all <div> elements that have a class attribute value containing "test".

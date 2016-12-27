@@ -1,0 +1,26 @@
+1.practice every selector listed by an example and explain the example.?
+
+answer:
+
+1.ID selector:it has the highest priority.
+2.class:it also selector in html.
+
+3.h1 ,p:
+Select and style all <h1> elements AND all <p> elements.
+
+4.div p:
+Select and style every <p> element that is inside <div> elements.
+
+5.div > p:
+Select and style every <p> element where the parent is a <div> element.
+
+This paragraph <p> is a child, or a direct descendant, of the outermost <div>. That means it's not immediately contained by any other element than a <div>. The hierarchy is as simple as the selector describes, and as such it's selected by div > p.
+
+6.div + P:
+Select and style every <p> element that are placed immediately after <div> elements.Selects all p elements whose previous sibling is a div element. To put it simply, this selects all p elements which come right after you close a div tag.
+
+7.div ~ p:
+
+ Selects all p elements whose one of the previous siblings is a div elements. This implies that all the <p> tags you place after you close a div, so long as they are not enclosed in any other tags, they are selected.
+
+
