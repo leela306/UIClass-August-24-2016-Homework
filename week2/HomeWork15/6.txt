@@ -1,7 +1,7 @@
  event.stopImmediatePropagation?
 
  we can have multiple event handlers for the same element.if we have one parent and 5 child elements 
- then if we use event.stoppropogation then first child events invoked first then parent.
+ then if we use event.stoppropogation then only child invent invoked.
  if we use  event.stopImmediatePropagation then only first event handler is invoked then it will immediately stop the propagation
  
  refernces:
