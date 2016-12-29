@@ -1,4 +1,5 @@
 prototype?
+
 answer:
 is a single object, which would be the same across all the object which has been created out of the function.
 all objects inherit methods and properties from Object.prototype.the prototype is also an object
