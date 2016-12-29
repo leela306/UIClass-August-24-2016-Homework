@@ -1,0 +1,19 @@
+4) differences between sass less and stylus?
+
+answer:
+Variables:
+
+Variables were all time wanted feature for CSS. Every developer, wanted to define a base color and use it all over the CSS file, in stead of writing the hex or named color in a property each time. Same as "color", variables needed for "width", "font-size", "font-family", "borders" etc.
+
+Variables in SASS start with $ sign, in LESS @ sign and no prefix in Stylus. Both in SASS and LESS, values are assigned with colon (:), and with equals sign (=) in Stylus.
+
+Nesting:
+
+CSS lacks visual hierarchy while working with child selectors. You have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy as in the HTML and increases the readability. In some cases, nesting causes oversizing the selectors and something like a "selector train", so use it wisely.
+
+Extends:
+
+Extends are useful for sharing a generic definition with selectors rather than copying it in. All extended selectors are grouped in compiled CSS. SASS extends every instance of extended selector that includes its child selectors and inherited properties. However, in LESS you can select every instance of extended selector by adding "all" attribute to extend method or you can select only the main instance. Extends are also chainable.
+
+Imports:
+Rather than using a one large file, separating your codes in small pieces is helpful for expressing your declarations and increasing maintainability and control over the codebase. You can group the similar code chunks in similar folders and import them to main css file. Also with import statement, frameworks can also be added to work packages.

@@ -1,0 +1,12 @@
+3.advantages of using sass?
+
+SASS worked as input and CSS worked as an output. We can modify the code only from input to output (SASS to CSS) but not from output to input (CSS to SASS).I can change the code in all the web pages but by using the SAAS we can easily change the code at the same time.
+
+advantages:
+
+Nested syntax.
+Ability to define variables.
+Ability to define mixins.
+Mathematical functions.
+Operational functions (such as “lighten” and “darken”)
+Joining of multiple files.

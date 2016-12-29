@@ -1,0 +1,5 @@
+2.try to understand sass pre processor?
+
+SAAS is used to ease the programmer task, it can change the code in hundreds of the pages at the same time. As a developer I know how difficult to change the code in all the pages, for example if the client told me to change the background color then I should change the code in all the web pages but by using the SAAS we can easily change the code at the same time. we just need to install the software called ruby in our system. SAAS will work as input and HTML file will work as the output. If you make may changes in the input they will reflect automatically in the output, there is no need to modify them. We just need to write one command in the ruby as command prompt window then it will monitor all the changes made by the user.
+
+By using the command “saas -- watch styles.scss:style.css”, can observe the changes in the command prompt. SASS worked as input and CSS worked as an output. We can modify the code only from input to output (SASS to CSS) but not from output to input (CSS to SASS).
