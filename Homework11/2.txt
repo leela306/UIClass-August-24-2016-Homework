@@ -1,10 +1,12 @@
  2.object and object methods (.hasOwnProperty(item))?
+
  answer:
  objects are also like variables but object can contains many values than variables.
+
  we can creat empty object too
  var obj={};
 
- we can objects can have so many propterties ,they can be define by using key value pairs
+ objects can have so many propterties ,they can be define by using key value pairs
  {key:value}//key and value are separate by :colon
  properties can be separated by comma ,
   key name should be a string in javascript while value can be any datatype in the javascript.

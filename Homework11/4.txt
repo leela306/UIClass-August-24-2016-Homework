@@ -1,4 +1,4 @@
-4.understand about properties in object. look into about adding property, delete a property, edit property value, check if a property exists?
+﻿4.understand about properties in object. look into about adding property, delete a property, edit property value, check if a property exists?
 
 answer:
 
@@ -36,7 +36,7 @@ var obj={
 
   obj.color="green";
   or
-  obj.['age']=22;
+  obj['age']=22;
 
   4.check if a property exists?
   by using hasOwnProperty we can check whether the property existance //return boolen true or false
