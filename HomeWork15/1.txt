@@ -1,8 +1,0 @@
-we can not have add eventlister for all the tags at a time,only one div at a time but you can add multiple events by using this.
-
-document.getElementsByTagName('div').length // it will gives the number of divs available in the document.
-
-by using for loop we can add the event listener  to all the divs but we are unable to identify which div has been clicked.
-
-so we use event.target --->it will tells us event has clicked.
-event.target.innerHTML will gives you the content with in the divs.
